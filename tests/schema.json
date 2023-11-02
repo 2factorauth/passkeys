@@ -1,0 +1,130 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "2factorauth passkeys entry",
+  "type": "object",
+  "maximum": 1,
+  "minimum": 1,
+  "patternProperties": {
+    "$": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "categories"
+      ],
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "img": {
+          "type": "string",
+          "pattern": "^[a-z0-9_\\-+.]+\\.(png|svg)$"
+        },
+        "passkeys": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^(allowed|required|mfa)"
+          }
+        },
+        "documentation": {
+          "type": "string",
+          "format": "uri-reference",
+          "pattern": "^(https:|http:)"
+        },
+        "recovery": {
+          "type": "string",
+          "format": "uri"
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 10
+        },
+        "regions": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^-?[a-z]{2}$"
+          }
+        },
+        "additional-domains": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": [
+            {
+              "type": "string",
+              "format": "hostname"
+            }
+          ]
+        },
+        "categories": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z]+$"
+          }
+        },
+        "contact": {
+          "type": "object",
+          "additionalProperties": false,
+          "minimum": 1,
+          "properties": {
+            "email": {
+              "type": "string",
+              "format": "email"
+            },
+            "facebook": {
+              "type": "string",
+              "minLength": 1
+            },
+            "twitter": {
+              "type": "string",
+              "pattern": "^(\\w){1,15}$"
+            },
+            "form": {
+              "type": "string",
+              "format": "uri"
+            },
+            "language": {
+              "type": "string",
+              "pattern": "^[a-z]{2}$"
+            }
+          },
+          "not": {
+            "allOf": [
+              {
+                "required": [
+                  "form"
+                ]
+              },
+              {
+                "required": [
+                  "email"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "oneOf": [
+        {
+          "required": [
+            "passkeys"
+          ]
+        },
+        {
+          "required": [
+            "contact"
+          ]
+        }
+      ]
+    }
+  }
+}

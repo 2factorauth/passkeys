@@ -1,0 +1,26 @@
+# IDE files
+.idea/
+nbproject/
+.vscode
+
+# Ruby files
+.bundle/
+.config/
+Gemfile.lock
+vendor/
+.env
+
+# NPM files
+node_modules/
+package-lock.json
+package.json
+
+# OS files
+*.DS_Store
+*.swp
+Thumbs.db
+ehthumbs.db
+tmp/
+
+# API JSON files
+api/*
