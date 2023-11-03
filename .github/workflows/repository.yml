@@ -22,33 +22,26 @@ jobs:
             /tmp/similarweb
           key: tmp-files-${{ hashFiles('/tmp/similarweb/*')}}
       - name: Validate JSON structure
-        run: bundle exec ruby ./tests/validate-json.rb
-      - name: Validate Categories
-        run: bundle exec ruby ./tests/validate-categories.rb
+        run: bundle exec ruby ./tests/validate_json.rb
       - name: Validate Region codes
-        run: bundle exec ruby ./tests/region-codes.rb
+        run: bundle exec ruby ./tests/validate_regions.rb
       - name: Validate Language codes
-        run: bundle exec ruby ./tests/language-codes.rb
+        run: bundle exec ruby ./tests/validate_languages.rb
       - name: Validate file extensions and permissions
-        run: tests/validate-fs.sh
+        run: tests/validate_fs.sh
       - name: Validate Images
-        run: bundle exec ruby ./tests/validate-images.rb
+        run: bundle exec ruby ./tests/validate_images.rb
       - name: Validate SVG
-        run: bundle exec ruby ./tests/svg-lint.rb
-      - name: Validate URL/Domain reachability
-        run: bundle exec ruby ./tests/validate-urls.rb
-        continue-on-error: true
+        run: bundle exec ruby ./tests/svg_lint.rb
       - name: Quality Checks
-        run: bundle exec ruby ./tests/quality-checks.rb
-      - name: Validate Ruby scripts
-        run: bundle exec rubocop
+        run: bundle exec ruby ./tests/quality_checks.rb
 
   publish:
     name: Build and Publish files
     if: >
       github.event_name == 'push' &&
       github.ref == 'refs/heads/master' &&
-      github.repository == '2factorauth/twofactorauth'
+      github.repository == '2factorauth/passkeys'
     concurrency:
       group: 'publish'
       cancel-in-progress: true
@@ -59,17 +52,16 @@ jobs:
     environment: production
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
-        with:
-          fetch-depth: 2
+      - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
           ruby-version: '3.0'
       - name: Generate API files
         run: |
-          mkdir -p api/v3
-          ./scripts/APIv3.rb
+          mkdir -p public/api/v1
+          mkdir -p public/api/private
+          ./scripts/APIv1.rb
       - name: Publish changes to Algolia
         run: bundle exec ruby ./scripts/Algolia.rb
         env:
@@ -87,11 +79,7 @@ jobs:
           PGP_PASSWORD: ${{ secrets.PGP_PASSWORD }}
           PGP_KEY_ID: ${{ steps.pgp.outputs.keyid }}
       - name: Prepare publish directory
-        run: |
-          mkdir -p public/icons
-          cp -r api/. public/
-          cp -r img/. public/icons/
-          cp robots.txt public/
+        run: mv img/ public/icons
       - uses: actions/upload-pages-artifact@v1
         with:
           path: public/

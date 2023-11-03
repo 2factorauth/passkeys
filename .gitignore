@@ -22,5 +22,5 @@ Thumbs.db
 ehthumbs.db
 tmp/
 
-# API JSON files
-api/*
+# Build output
+public/

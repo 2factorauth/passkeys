@@ -21,13 +21,21 @@
           "pattern": "^[a-z0-9_\\-+.]+\\.(png|svg)$"
         },
         "passkeys": {
-          "type": "array",
-          "uniqueItems": true,
-          "minItems": 1,
-          "items": {
-            "type": "string",
-            "pattern": "^(allowed|required|mfa)"
-          }
+          "oneOf": [
+            {
+              "type": "array",
+              "uniqueItems": true,
+              "minItems": 2,
+              "items": {
+                "type": "string",
+                "pattern": "^(allowed|required|mfa)"
+              }
+            },
+            {
+              "type": "string",
+              "pattern": "^(allowed|required|mfa)"
+            }
+          ]
         },
         "documentation": {
           "type": "string",
@@ -63,13 +71,21 @@
           ]
         },
         "categories": {
-          "type": "array",
-          "uniqueItems": true,
-          "minItems": 1,
-          "items": {
-            "type": "string",
-            "pattern": "^[a-z]+$"
-          }
+          "oneOf": [
+            {
+              "type": "array",
+              "uniqueItems": true,
+              "minItems": 2,
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z]+$"
+              }
+            },
+            {
+              "type": "string",
+              "pattern": "^[a-z]+$"
+            }
+          ]
         },
         "contact": {
           "type": "object",
