@@ -8,7 +8,8 @@ require 'json'
 # @return [Integer] Returns exit code
 def public_api
   all = {}
-  passkeys = {}
+  passwordless = {}
+  mfa = {}
   path = 'public/api/v1'
 
   Dir.glob(@entries) { |file| all[File.basename(file, '.*')] = JSON.parse(File.read(file)).values[0] }
@@ -18,24 +19,20 @@ def public_api
     end
     entry.delete('additional-domains')
     entry.delete('img')
+    entry.delete('categories')
   end
 
   all.to_h.each do |k, v|
-    pk = Array(v['passkeys'])
-    next if pk.empty?
-
-    pk.each do |option|
-      passkeys[option] ||= {}
-      passkeys[option][k] = v
-    end
+    mfa[k] = v if v['mfa']
+    passwordless[k] = v if v['passwordless']
   end
 
-  { 'all' => all }.merge(passkeys).each do |k, v|
+  { 'all' => all, 'mfa' => mfa, 'passwordless' => passwordless }.each do |k, v|
     File.open("#{path}/#{k}.json", 'w') { |file| file.write v.sort_by { |a, _| a.downcase }.to_h.to_json }
   end
 
   File.open("#{path}/supported.json", 'w') do |file|
-    file.write all.select { |_, v| v.key? 'passkeys' }.sort_by { |k, _| k.downcase }.to_h.to_json
+    file.write all.select { |_, v| v.keys.any? { |k| k.match(/mfa|passwordless/) } }.sort_by { |k, _| k.downcase }.to_h.to_json
   end
 end
 
@@ -55,7 +52,6 @@ def private_api
       regions[region] = {} unless regions.key? region
       regions[region]['count'] = 1 + regions[region]['count'].to_i
     end
-    entry['passkeys'] = Array(entry['passkeys']) if entry.key?('passkeys')
     entry['categories'] = Array(entry['categories']) if entry.key?('categories')
     entry.delete 'additional-domains'
   end

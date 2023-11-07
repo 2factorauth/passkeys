@@ -20,22 +20,13 @@
           "type": "string",
           "pattern": "^[a-z0-9_\\-+.]+\\.(png|svg)$"
         },
-        "passkeys": {
-          "oneOf": [
-            {
-              "type": "array",
-              "uniqueItems": true,
-              "minItems": 2,
-              "items": {
-                "type": "string",
-                "pattern": "^(allowed|required|mfa)"
-              }
-            },
-            {
-              "type": "string",
-              "pattern": "^(allowed|required|mfa)"
-            }
-          ]
+        "mfa": {
+          "type": "string",
+          "pattern": "^(allowed|required)$"
+        },
+        "passwordless": {
+          "type": "string",
+          "pattern": "^(allowed|required)$"
         },
         "documentation": {
           "type": "string",
@@ -131,14 +122,60 @@
       },
       "oneOf": [
         {
-          "required": [
-            "passkeys"
-          ]
+          "required": ["contact"],
+          "not": {
+            "anyOf": [
+              { "required": ["mfa"] },
+              { "required": ["passwordless"] }
+            ]
+          }
         },
         {
-          "required": [
-            "contact"
-          ]
+          "type": "object",
+          "properties": {
+            "mfa": {
+              "type": "string",
+              "pattern": "^(allowed|required)$"
+            },
+            "passwordless": {
+              "type": "string",
+              "pattern": "^(allowed|required)$"
+            }
+          },
+          "required": ["mfa", "passwordless"],
+          "not": { "required": ["contact"] }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "mfa": {
+              "type": "string",
+              "pattern": "^(allowed|required)$"
+            }
+          },
+          "required": ["mfa"],
+          "not": {
+            "anyOf": [
+              { "required": ["passwordless"] },
+              { "required": ["contact"] }
+            ]
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "passwordless": {
+              "type": "string",
+              "pattern": "^(allowed|required)$"
+            }
+          },
+          "required": ["passwordless"],
+          "not": {
+            "anyOf": [
+              { "required": ["mfa"] },
+              { "required": ["contact"] }
+            ]
+          }
         }
       ]
     }

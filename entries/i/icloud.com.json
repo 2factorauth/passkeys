@@ -1,0 +1,8 @@
+{
+  "Apple iCloud": {
+    "passwordless": "allowed",
+    "documentation": "https://support.apple.com/guide/iphone/use-passkeys-to-sign-in-to-apps-and-websites-iphf538ea8d0/ios",
+    "notes": "Passwordless authentication only works on Apple devices.",
+    "categories": "backup"
+  }
+}
