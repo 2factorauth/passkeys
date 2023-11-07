@@ -43,7 +43,7 @@ def private_api
   regions = {}
   path = 'public/api/private'
 
-  Dir.glob(@entries) { |file| all[JSON.parse(File.read(file)).keys[0]] = JSON.parse(File.read(file)).values[0] }
+  Dir.glob(@entries) { |file| all[JSON.parse(File.read(file)).keys[0]] = JSON.parse(File.read(file)).values[0].merge({ 'domain' => File.basename(file, '.*') }) }
 
   all.sort.to_h.each do |_, entry|
     entry['regions']&.each do |region|
