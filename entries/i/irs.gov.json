@@ -1,0 +1,10 @@
+{
+  "US Internal Revenue Service": {
+    "mfa": "allowed",
+    "documentation": "https://www.irs.gov/privacy-disclosure/secure-access-how-to-register-for-certain-online-self-help-tools",
+    "regions": [
+      "us"
+    ],
+    "categories": "government"
+  }
+}

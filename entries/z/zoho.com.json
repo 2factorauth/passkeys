@@ -1,0 +1,13 @@
+{
+  "Zoho": {
+    "mfa": "allowed",
+    "passwordless": "allowed",
+    "documentation": "https://help.zoho.com/portal/en/kb/accounts/multi-factor-authentication/articles/mfa-security-key",
+    "categories": [
+      "communication",
+      "email",
+      "marketing",
+      "remote"
+    ]
+  }
+}

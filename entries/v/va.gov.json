@@ -1,0 +1,10 @@
+{
+  "US Veteran Affairs": {
+    "mfa": "allowed",
+    "documentation": "https://www.va.gov/resources/verifying-your-identity-on-vagov",
+    "regions": [
+      "us"
+    ],
+    "categories": "government"
+  }
+}

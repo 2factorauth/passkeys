@@ -1,0 +1,10 @@
+{
+  "Vysoká škola ekonomická v Praze": {
+    "mfa": "allowed",
+    "documentation": "https://ci.vse.cz/english/support/procedures/multi-factor-authentication-in-microsoft-365/",
+    "regions": [
+      "cz"
+    ],
+    "categories": "universities"
+  }
+}

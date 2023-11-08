@@ -1,0 +1,7 @@
+{
+  "Salesforce": {
+    "mfa": "allowed",
+    "documentation": "https://developer.salesforce.com/docs/atlas.en-us.securityImplGuide.meta/securityImplGuide/add_time-based_token.htm",
+    "categories": "communication"
+  }
+}

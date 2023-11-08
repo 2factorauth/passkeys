@@ -1,0 +1,7 @@
+{
+  "Namecheap": {
+    "mfa": "allowed",
+    "documentation": "https://www.namecheap.com/security/2fa-two-factor-authentication/",
+    "categories": "domains"
+  }
+}

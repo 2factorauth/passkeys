@@ -1,0 +1,10 @@
+{
+  "University of California, Merced": {
+    "mfa": "allowed",
+    "documentation": "https://it.ucmerced.edu/2FA",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

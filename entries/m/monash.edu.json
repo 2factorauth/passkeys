@@ -1,0 +1,14 @@
+{
+  "Monash University": {
+    "additional-domains": [
+      "monash.edu.my"
+    ],
+    "mfa": "allowed",
+    "documentation": "https://www.monash.edu/esolutions/accounts-passwords/multi-factor-authentication",
+    "img": "monash.edu.png",
+    "regions": [
+      "au"
+    ],
+    "categories": "universities"
+  }
+}

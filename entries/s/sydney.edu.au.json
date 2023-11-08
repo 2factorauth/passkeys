@@ -1,0 +1,10 @@
+{
+  "The University of Sydney": {
+    "mfa": "allowed",
+    "documentation": "https://www.sydney.edu.au/students/log-in-to-university-systems.html",
+    "regions": [
+      "au"
+    ],
+    "categories": "universities"
+  }
+}

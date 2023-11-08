@@ -1,0 +1,7 @@
+{
+  "MongoDB": {
+    "mfa": "allowed",
+    "documentation": "https://docs.atlas.mongodb.com/security-multi-factor-authentication/",
+    "categories": "developer"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "DNSimple": {
+    "mfa": "allowed",
+    "documentation": "https://support.dnsimple.com/articles/two-factor-authentication/",
+    "categories": "domains"
+  }
+}

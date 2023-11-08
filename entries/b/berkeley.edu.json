@@ -1,0 +1,11 @@
+{
+  "University of California, Berkeley": {
+    "mfa": "allowed",
+    "documentation": "https://calnetweb.berkeley.edu/calnet-2-step",
+    "img": "berkeley.edu.png",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

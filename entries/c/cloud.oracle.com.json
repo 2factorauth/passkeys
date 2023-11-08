@@ -1,0 +1,10 @@
+{
+  "Oracle Cloud Infrastructure": {
+    "additional-domains": [
+      "oraclecloud.com"
+    ],
+    "mfa": "allowed",
+    "documentation": "https://docs.oracle.com/en/cloud/paas/identity-cloud/uaids/configure-authentication-factors.html",
+    "categories": "cloud"
+  }
+}

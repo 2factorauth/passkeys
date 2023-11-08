@@ -1,0 +1,10 @@
+{
+  "University of Notre Dame": {
+    "mfa": "allowed",
+    "documentation": "https://nd.service-now.com/nd_portal?id=kb_article_view&sysparm_article=KB0017218",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "Crowd Supply": {
+    "mfa": "allowed",
+    "categories": [
+      "crowdfunding",
+      "retail"
+    ]
+  }
+}

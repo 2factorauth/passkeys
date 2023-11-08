@@ -1,0 +1,10 @@
+{
+  "SAPO Mail": {
+    "mfa": "allowed",
+    "documentation": "https://ajuda.sapo.pt/id-67553",
+    "regions": [
+      "pt"
+    ],
+    "categories": "email"
+  }
+}

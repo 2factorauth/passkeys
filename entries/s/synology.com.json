@@ -1,0 +1,8 @@
+{
+  "Synology": {
+    "mfa": "allowed",
+    "passwordless": "allowed",
+    "documentation": "https://kb.synology.com/en-us/DSM/help/DSM/SecureSignIn/hardware_security_key",
+    "categories": "backup"
+  }
+}

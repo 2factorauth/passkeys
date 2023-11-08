@@ -1,0 +1,10 @@
+{
+  "Cal Poly": {
+    "mfa": "allowed",
+    "documentation": "https://calpoly.atlassian.net/wiki/spaces/CPKB/pages/3539066",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

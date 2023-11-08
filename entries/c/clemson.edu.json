@@ -1,0 +1,10 @@
+{
+  "Clemson University": {
+    "mfa": "allowed",
+    "documentation": "https://2fa.app.clemson.edu/",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

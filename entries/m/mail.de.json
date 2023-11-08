@@ -1,0 +1,7 @@
+{
+  "mail.de": {
+    "mfa": "allowed",
+    "documentation": "https://mail.de/hilfe/u2f-authenticator",
+    "categories": "email"
+  }
+}

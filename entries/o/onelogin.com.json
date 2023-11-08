@@ -1,0 +1,7 @@
+{
+  "OneLogin": {
+    "mfa": "allowed",
+    "documentation": "https://support.onelogin.com/kb/4266569",
+    "categories": "identity"
+  }
+}

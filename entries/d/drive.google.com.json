@@ -1,0 +1,9 @@
+{
+  "Google Drive": {
+    "mfa": "allowed",
+    "passwordless": "allowed",
+    "documentation": "https://safety.google/authentication/passkey/",
+    "recovery": "https://support.google.com/accounts/answer/185834",
+    "categories": "backup"
+  }
+}

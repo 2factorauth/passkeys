@@ -1,0 +1,10 @@
+{
+  "Deakin University": {
+    "mfa": "allowed",
+    "documentation": "https://help.deakin.edu.au/ithelp?id=kb_article&sysparm_article=KB0014662",
+    "regions": [
+      "au"
+    ],
+    "categories": "universities"
+  }
+}

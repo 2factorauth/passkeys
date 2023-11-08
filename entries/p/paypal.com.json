@@ -1,0 +1,10 @@
+{
+  "PayPal": {
+    "additional-domains": [
+      "paypal-search.com"
+    ],
+    "mfa": "allowed",
+    "documentation": "https://www.paypal.com/us/smarthelp/article/faq4057",
+    "categories": "payments"
+  }
+}

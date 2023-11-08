@@ -1,0 +1,14 @@
+{
+  "Bank of America": {
+    "additional-domains": [
+      "bofa.com",
+      "mbna.com"
+    ],
+    "mfa": "allowed",
+    "documentation": "https://www.bankofamerica.com/security-center/online-banking/",
+    "regions": [
+      "us"
+    ],
+    "categories": "banking"
+  }
+}

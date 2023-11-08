@@ -1,0 +1,10 @@
+{
+  "Pennsylvania State University": {
+    "mfa": "allowed",
+    "documentation": "https://get2fa.psu.edu",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

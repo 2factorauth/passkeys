@@ -1,0 +1,10 @@
+{
+  "University of Idaho": {
+    "mfa": "allowed",
+    "documentation": "https://support.uidaho.edu/TDClient/KB/ArticleDet?ID=109",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

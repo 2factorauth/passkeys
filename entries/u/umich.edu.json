@@ -1,0 +1,10 @@
+{
+  "University of Michigan": {
+    "mfa": "allowed",
+    "documentation": "https://www.safecomputing.umich.edu/two-factor-authentication",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

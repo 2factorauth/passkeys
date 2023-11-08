@@ -1,0 +1,13 @@
+{
+  "Microsoft 365": {
+    "additional-domains": [
+      "login.microsoftonline.com",
+      "office.microsoft.com",
+      "microsoft365.com",
+      "office365.com"
+    ],
+    "passwordless": "allowed",
+    "documentation": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-passwordless",
+    "categories": "other"
+  }
+}

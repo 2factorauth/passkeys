@@ -1,0 +1,10 @@
+{
+  "Facebook": {
+    "additional-domains": [
+      "messenger.com"
+    ],
+    "mfa": "allowed",
+    "documentation": "https://www.facebook.com/help/148233965247823",
+    "categories": "social"
+  }
+}

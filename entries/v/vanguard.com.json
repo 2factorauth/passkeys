@@ -1,0 +1,13 @@
+{
+  "Vanguard": {
+    "mfa": "allowed",
+    "documentation": "https://investor.vanguard.com/security/security-keys",
+    "notes": "Security key support requires a phone number as a backup.",
+    "img": "vanguard.svg",
+    "regions": [
+      "-gb",
+      "-au"
+    ],
+    "categories": "investing"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "Stanford University": {
+    "mfa": "allowed",
+    "documentation": "https://uit.stanford.edu/service/webauth/twostep",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

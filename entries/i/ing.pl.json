@@ -1,0 +1,12 @@
+{
+  "ING Bank Slaski [PL]": {
+    "mfa": "allowed",
+    "documentation": "https://www.ing.pl/indywidualni/bankowosc-internetowa/bezpieczenstwo/klucze-zabezpieczen-u2f",
+    "notes": "The first security key requires confirmation at a bank branch.",
+    "img": "ing.svg",
+    "regions": [
+      "pl"
+    ],
+    "categories": "banking"
+  }
+}

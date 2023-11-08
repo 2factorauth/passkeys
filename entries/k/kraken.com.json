@@ -1,0 +1,7 @@
+{
+  "Kraken": {
+    "mfa": "allowed",
+    "documentation": "https://support.kraken.com/hc/en-us/articles/360000426923",
+    "categories": "cryptocurrencies"
+  }
+}

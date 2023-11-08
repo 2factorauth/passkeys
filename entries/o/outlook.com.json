@@ -1,0 +1,11 @@
+{
+  "Outlook.com": {
+    "additional-domains": [
+      "outlook.live.com",
+      "hotmail.com"
+    ],
+    "passwordless": "allowed",
+    "documentation": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-passwordless",
+    "categories": "email"
+  }
+}

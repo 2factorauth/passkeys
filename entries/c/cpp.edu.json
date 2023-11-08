@@ -1,0 +1,10 @@
+{
+  "Cal Poly Pomona": {
+    "mfa": "allowed",
+    "documentation": "https://cpp.service-now.com/ehelp?id=kb_article&sys_id=ed4dcbc3dbeb1f449bba68461b96198e",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

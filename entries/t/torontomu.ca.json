@@ -1,0 +1,10 @@
+{
+  "Toronto Metropolitan University": {
+    "mfa": "allowed",
+    "documentation": "https://www.torontomu.ca/ccs/services/ITSecurity/protecting-your-identity/two-factor-authentication/",
+    "regions": [
+      "ca"
+    ],
+    "categories": "universities"
+  }
+}

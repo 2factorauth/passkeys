@@ -1,0 +1,10 @@
+{
+  "Boston University": {
+    "mfa": "allowed",
+    "documentation": "https://www.bu.edu/tech/support/duo/",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

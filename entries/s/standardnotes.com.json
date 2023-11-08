@@ -1,0 +1,9 @@
+{
+  "Standard Notes": {
+    "mfa": "allowed",
+    "documentation": "https://standardnotes.com/help/25",
+    "recovery": "https://standardnotes.com/help/22",
+    "notes": "Professional Subscription required to use security keys.",
+    "categories": "backup"
+  }
+}

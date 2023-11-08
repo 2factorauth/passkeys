@@ -1,0 +1,7 @@
+{
+  "Braintree": {
+    "mfa": "allowed",
+    "documentation": "https://articles.braintreepayments.com/reference/security/two-factor-authentication",
+    "categories": "payments"
+  }
+}

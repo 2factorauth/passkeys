@@ -1,0 +1,6 @@
+{
+  "SimpleLogin": {
+    "mfa": "allowed",
+    "categories": "email"
+  }
+}

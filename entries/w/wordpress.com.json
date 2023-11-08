@@ -1,0 +1,7 @@
+{
+  "WordPress.com": {
+    "mfa": "allowed",
+    "documentation": "https://en.support.wordpress.com/security/two-step-authentication/",
+    "categories": "social"
+  }
+}

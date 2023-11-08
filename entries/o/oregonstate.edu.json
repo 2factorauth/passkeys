@@ -1,0 +1,10 @@
+{
+  "Oregon State University": {
+    "mfa": "allowed",
+    "documentation": "https://oregonstate.teamdynamix.com/TDClient/1935/Portal/KB/?CategoryID=8235",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

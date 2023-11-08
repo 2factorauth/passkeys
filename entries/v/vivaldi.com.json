@@ -1,0 +1,10 @@
+{
+  "Vivaldi": {
+    "additional-domains": [
+      "vivaldi.net"
+    ],
+    "mfa": "allowed",
+    "documentation": "https://help.vivaldi.com/services/account/two-factor-authentication/",
+    "categories": "other"
+  }
+}

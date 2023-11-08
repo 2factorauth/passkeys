@@ -1,0 +1,7 @@
+{
+  "Delinea": {
+    "mfa": "allowed",
+    "documentation": "https://docs.delinea.com/ss/10.8.0/authentication/two-factor-authentication",
+    "categories": "identity"
+  }
+}

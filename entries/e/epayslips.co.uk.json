@@ -1,0 +1,9 @@
+{
+  "Epayslips": {
+    "mfa": "allowed",
+    "regions": [
+      "gb"
+    ],
+    "categories": "finance"
+  }
+}

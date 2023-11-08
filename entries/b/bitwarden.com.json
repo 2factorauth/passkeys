@@ -1,0 +1,7 @@
+{
+  "Bitwarden": {
+    "mfa": "allowed",
+    "documentation": "https://bitwarden.com/help/setup-two-step-login-fido/",
+    "categories": "identity"
+  }
+}

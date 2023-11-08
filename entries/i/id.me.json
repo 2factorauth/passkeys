@@ -1,0 +1,10 @@
+{
+  "ID.me": {
+    "mfa": "allowed",
+    "documentation": "https://help.id.me/hc/en-us/articles/360018113053",
+    "regions": [
+      "us"
+    ],
+    "categories": "identity"
+  }
+}

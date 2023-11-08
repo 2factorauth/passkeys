@@ -1,0 +1,8 @@
+{
+  "Stripe": {
+    "mfa": "allowed",
+    "documentation": "https://support.stripe.com/questions/how-do-i-enable-two-step-verification",
+    "recovery": "https://support.stripe.com/questions/sign-in-to-your-stripe-account-without-a-2fa-device-and-or-backup-code",
+    "categories": "payments"
+  }
+}

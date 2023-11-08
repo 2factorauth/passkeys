@@ -1,0 +1,10 @@
+{
+  "University of British Columbia": {
+    "mfa": "allowed",
+    "documentation": "https://privacymatters.ubc.ca/test-faqs",
+    "regions": [
+      "ca"
+    ],
+    "categories": "universities"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "LastPass": {
+    "mfa": "allowed",
+    "documentation": "https://support.logmeininc.com/lastpass/help/enable-multifactor-authentication-lp010002",
+    "recovery": "https://support.logmeininc.com/lastpass/help/i-lost-my-phone-ndash-how-do-i-disable-multifactor-authentication-for-lastpass",
+    "notes": "Security key MFA is available through Duo integration.",
+    "categories": "identity"
+  }
+}

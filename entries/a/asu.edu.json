@@ -1,0 +1,10 @@
+{
+  "Arizona State University": {
+    "mfa": "allowed",
+    "documentation": "https://getprotected.asu.edu/services/identity-and-access-management/duo-two-factor-authentication",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

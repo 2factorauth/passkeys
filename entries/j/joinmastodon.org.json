@@ -1,0 +1,11 @@
+{
+  "Mastodon": {
+    "additional-domains": [
+      "mastodon.social"
+    ],
+    "mfa": "allowed",
+    "documentation": "https://github.com/McKael/mastodon-documentation/blob/master/Using-Mastodon/2FA.md",
+    "notes": "TOTP must be enabled to use a security key.",
+    "categories": "social"
+  }
+}

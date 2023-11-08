@@ -1,0 +1,7 @@
+{
+  "Gandi": {
+    "mfa": "allowed",
+    "documentation": "https://docs.gandi.net/en/account_management/security/",
+    "categories": "domains"
+  }
+}

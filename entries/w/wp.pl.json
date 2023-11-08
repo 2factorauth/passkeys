@@ -1,0 +1,10 @@
+{
+  "Wirtualna Polska": {
+    "mfa": "allowed",
+    "documentation": "https://pomoc.wp.pl/1login/jak-wlaczyc-i-wylaczyc-logowanie-dwustopniowe",
+    "regions": [
+      "pl"
+    ],
+    "categories": "email"
+  }
+}

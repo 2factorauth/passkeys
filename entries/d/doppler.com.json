@@ -1,0 +1,7 @@
+{
+  "Doppler": {
+    "mfa": "allowed",
+    "documentation": "https://docs.doppler.com/docs/security-fact-sheet#user-authentication",
+    "categories": "developer"
+  }
+}

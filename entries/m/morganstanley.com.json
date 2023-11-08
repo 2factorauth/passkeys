@@ -1,0 +1,13 @@
+{
+  "Morgan Stanley": {
+    "mfa": "allowed",
+    "documentation": "https://www.morganstanley.com/what-we-do/wealth-management/online-security/authentication",
+    "regions": [
+      "us"
+    ],
+    "categories": [
+      "investing",
+      "banking"
+    ]
+  }
+}

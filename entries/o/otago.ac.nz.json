@@ -1,0 +1,11 @@
+{
+  "University of Otago": {
+    "mfa": "allowed",
+    "documentation": "https://otago.custhelp.com/app/answers/detail/a_id/3073",
+    "notes": "Security key MFA is only available to staff.",
+    "regions": [
+      "nz"
+    ],
+    "categories": "universities"
+  }
+}

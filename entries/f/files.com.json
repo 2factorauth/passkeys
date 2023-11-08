@@ -1,0 +1,7 @@
+{
+  "Files.com": {
+    "mfa": "allowed",
+    "documentation": "https://www.files.com/docs/features/twofactor-authentication-2fa",
+    "categories": "backup"
+  }
+}

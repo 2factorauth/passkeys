@@ -1,0 +1,11 @@
+{
+  "Nvidia GeForce": {
+    "additional-domains": [
+      "nvidia.com",
+      "login.nvgs.nvidia.com"
+    ],
+    "mfa": "allowed",
+    "documentation": "https://login.nvgs.nvidia.com/v1/help/nfactor",
+    "categories": "gaming"
+  }
+}

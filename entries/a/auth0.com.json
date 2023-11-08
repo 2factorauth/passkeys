@@ -1,0 +1,8 @@
+{
+  "Auth0": {
+    "mfa": "allowed",
+    "documentation": "https://auth0.com/docs/secure/multi-factor-authentication/enable-mfa",
+    "recovery": "https://auth0.com/docs/secure/multi-factor-authentication/reset-user-mfa",
+    "categories": "identity"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "York University": {
+    "mfa": "allowed",
+    "documentation": "https://infosec.yorku.ca/2FA",
+    "regions": [
+      "ca"
+    ],
+    "categories": "universities"
+  }
+}

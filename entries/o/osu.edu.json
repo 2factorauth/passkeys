@@ -1,0 +1,10 @@
+{
+  "The Ohio State University": {
+    "mfa": "allowed",
+    "documentation": "https://buckeyepass.osu.edu",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

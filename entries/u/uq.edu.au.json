@@ -1,0 +1,10 @@
+{
+  "The University of Queensland": {
+    "mfa": "allowed",
+    "documentation": "https://my.uq.edu.au/information-and-services/information-technology/uq-accounts-and-passwords/multi-factor-authentication-mfa",
+    "regions": [
+      "au"
+    ],
+    "categories": "universities"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "Nitrado": {
+    "mfa": "allowed",
+    "documentation": "https://server.nitrado.net/en-US/guides/two-factor-authentication-en",
+    "categories": "hosting"
+  }
+}

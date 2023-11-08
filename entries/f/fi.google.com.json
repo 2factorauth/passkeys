@@ -1,0 +1,11 @@
+{
+  "Google Fi": {
+    "mfa": "allowed",
+    "passwordless": "allowed",
+    "documentation": "https://safety.google/authentication/passkey/",
+    "regions": [
+      "us"
+    ],
+    "categories": "utilities"
+  }
+}

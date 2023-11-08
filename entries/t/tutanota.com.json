@@ -1,0 +1,7 @@
+{
+  "Tutanota": {
+    "mfa": "allowed",
+    "documentation": "https://tutanota.com/howto/#2fa",
+    "categories": "email"
+  }
+}

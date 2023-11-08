@@ -1,0 +1,7 @@
+{
+  "Keeper": {
+    "mfa": "allowed",
+    "documentation": "https://www.keepersecurity.com/security#twoFactor",
+    "categories": "identity"
+  }
+}

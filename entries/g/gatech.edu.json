@@ -1,0 +1,10 @@
+{
+  "Georgia Institute of Technology": {
+    "mfa": "allowed",
+    "documentation": "https://oit.gatech.edu/two-factor-authentication",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

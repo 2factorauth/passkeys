@@ -1,0 +1,6 @@
+{
+  "BitGo": {
+    "mfa": "allowed",
+    "categories": "cryptocurrencies"
+  }
+}

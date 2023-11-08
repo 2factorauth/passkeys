@@ -1,0 +1,10 @@
+{
+  "Registro.br": {
+    "mfa": "allowed",
+    "documentation": "https://registro.br/ajuda/gerenciamento-de-conta/token/",
+    "regions": [
+      "br"
+    ],
+    "categories": "domains"
+  }
+}

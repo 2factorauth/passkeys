@@ -1,0 +1,10 @@
+{
+  "Harvey Mudd College": {
+    "mfa": "allowed",
+    "documentation": "https://www.hmc.edu/cis/duo-two-factor-authentication/",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "HEY": {
+    "mfa": "allowed",
+    "documentation": "https://hey.com/security/",
+    "categories": "email"
+  }
+}

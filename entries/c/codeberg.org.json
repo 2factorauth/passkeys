@@ -1,0 +1,7 @@
+{
+  "Codeberg": {
+    "mfa": "allowed",
+    "documentation": "https://docs.codeberg.org/security/2fa/",
+    "categories": "developer"
+  }
+}

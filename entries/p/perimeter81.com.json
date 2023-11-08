@@ -1,0 +1,8 @@
+{
+  "Perimeter 81": {
+    "mfa": "allowed",
+    "documentation": "https://support.perimeter81.com/docs/two-factor-authentication",
+    "notes": "Security key MFA is available through Duo integration.",
+    "categories": "security"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "Gmail": {
+    "mfa": "allowed",
+    "passwordless": "allowed",
+    "documentation": "https://safety.google/authentication/passkey/",
+    "categories": "email"
+  }
+}

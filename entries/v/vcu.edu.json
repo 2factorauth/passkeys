@@ -1,0 +1,10 @@
+{
+  "Virginia Commonwealth University": {
+    "mfa": "allowed",
+    "documentation": "https://ts.vcu.edu/askit/essential-computing/information-security/2factor/",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

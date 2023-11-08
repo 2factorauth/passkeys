@@ -1,0 +1,18 @@
+{
+  "Proton": {
+    "additional-domains": [
+      "pm.me",
+      "protonmail.com",
+      "protonvpn.com"
+    ],
+    "mfa": "allowed",
+    "documentation": "https://proton.me/support/two-factor-authentication-2fa",
+    "notes": "TOTP must be enabled to use a security key.",
+    "categories": [
+      "email",
+      "backup",
+      "vpn",
+      "identity"
+    ]
+  }
+}

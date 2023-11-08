@@ -1,0 +1,8 @@
+{
+  "npm": {
+    "mfa": "allowed",
+    "documentation": "https://docs.npmjs.com/configuring-two-factor-authentication",
+    "recovery": "https://docs.npmjs.com/recovering-your-2fa-enabled-account",
+    "categories": "developer"
+  }
+}

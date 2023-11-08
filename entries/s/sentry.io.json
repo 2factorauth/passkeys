@@ -1,0 +1,7 @@
+{
+  "Sentry": {
+    "mfa": "allowed",
+    "documentation": "https://blog.sentry.io/2016/06/22/introducing-2fa",
+    "categories": "developer"
+  }
+}

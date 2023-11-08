@@ -1,0 +1,10 @@
+{
+  "NordVPN": {
+    "additional-domains": [
+      "nordaccount.com"
+    ],
+    "mfa": "allowed",
+    "documentation": "https://support.nordvpn.com/1755768802/",
+    "categories": "vpn"
+  }
+}

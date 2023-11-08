@@ -1,0 +1,10 @@
+{
+  "FragDenStaat": {
+    "mfa": "allowed",
+    "documentation": "https://fragdenstaat.de/hilfe/ihr-konto-verwalten/zwei-faktor-login/",
+    "regions": [
+      "de"
+    ],
+    "categories": "government"
+  }
+}

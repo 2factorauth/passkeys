@@ -1,0 +1,7 @@
+{
+  "Cloud 66": {
+    "mfa": "allowed",
+    "documentation": "https://help.cloud66.com/node/account/two-factor-authentication.html",
+    "categories": "cloud"
+  }
+}

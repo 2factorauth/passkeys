@@ -1,0 +1,10 @@
+{
+  "Miami University": {
+    "mfa": "allowed",
+    "documentation": "https://www.miamioh.edu/it-services/special-groups/info-security/duo/",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

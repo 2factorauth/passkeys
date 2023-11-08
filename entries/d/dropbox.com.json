@@ -1,0 +1,12 @@
+{
+  "Dropbox": {
+    "additional-domains": [
+      "getdropbox.com"
+    ],
+    "mfa": "allowed",
+    "documentation": "https://help.dropbox.com/security/enable-two-step-verification",
+    "recovery": "https://help.dropbox.com/accounts-billing/security/issues-two-step-verification",
+    "notes": "Software or SMS 2FA must be enabled for passkeys to be registered.",
+    "categories": "backup"
+  }
+}

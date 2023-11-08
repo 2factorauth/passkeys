@@ -1,0 +1,11 @@
+{
+  "Masaryk University": {
+    "mfa": "allowed",
+    "documentation": "https://it.muni.cz/en/services/jednotne-prihlaseni-na-muni/navody/how-to-set-up-multi-factor-authentication",
+    "recovery": "https://it.muni.cz/en/forms/report-a-problem-with-single-sign-on",
+    "regions": [
+      "cz"
+    ],
+    "categories": "universities"
+  }
+}

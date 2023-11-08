@@ -1,0 +1,10 @@
+{
+  "Brigham Young University": {
+    "mfa": "allowed",
+    "documentation": "https://duo.byu.edu/",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

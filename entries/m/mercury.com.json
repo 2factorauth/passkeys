@@ -1,0 +1,10 @@
+{
+  "Mercury": {
+    "mfa": "allowed",
+    "documentation": "https://help.mercury.com/t/m1h3d07",
+    "regions": [
+      "us"
+    ],
+    "categories": "banking"
+  }
+}

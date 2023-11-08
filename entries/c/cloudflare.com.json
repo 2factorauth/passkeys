@@ -1,0 +1,11 @@
+{
+  "Cloudflare": {
+    "mfa": "allowed",
+    "documentation": "https://support.cloudflare.com/hc/en-us/articles/200167906",
+    "categories": [
+      "security",
+      "developer",
+      "domains"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "University of Waterloo": {
+    "mfa": "allowed",
+    "documentation": "https://uwaterloo.ca/two-factor-authentication/",
+    "img": "uwaterloo.ca.png",
+    "regions": [
+      "ca"
+    ],
+    "categories": "universities"
+  }
+}

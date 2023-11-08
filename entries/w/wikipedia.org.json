@@ -1,0 +1,8 @@
+{
+  "Wikipedia": {
+    "mfa": "allowed",
+    "documentation": "https://meta.wikimedia.org/wiki/Help:Two-factor_authentication",
+    "notes": "Currently limited to accounts with certain roles. See documentation for a full list.",
+    "categories": "other"
+  }
+}

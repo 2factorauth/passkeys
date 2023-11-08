@@ -1,0 +1,10 @@
+{
+  "Mail.Ru": {
+    "mfa": "allowed",
+    "documentation": "https://help.mail.ru/mail/settings/2fa",
+    "regions": [
+      "ru"
+    ],
+    "categories": "email"
+  }
+}

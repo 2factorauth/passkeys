@@ -1,0 +1,7 @@
+{
+  "Yahoo Mail": {
+    "mfa": "allowed",
+    "documentation": "https://help.yahoo.com/kb/SLN5013.html",
+    "categories": "email"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "Gemini": {
+    "mfa": "allowed",
+    "documentation": "https://support.gemini.com/hc/en-us/articles/204732985",
+    "regions": [
+      "us",
+      "ca",
+      "hk",
+      "sg",
+      "kr",
+      "gb",
+      "au"
+    ],
+    "categories": "cryptocurrencies"
+  }
+}

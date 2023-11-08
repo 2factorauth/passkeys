@@ -1,0 +1,7 @@
+{
+  "Talkdesk": {
+    "mfa": "allowed",
+    "documentation": "https://support.talkdesk.com/hc/en-us/articles/360015179592",
+    "categories": "other"
+  }
+}

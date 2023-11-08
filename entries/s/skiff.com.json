@@ -1,0 +1,17 @@
+{
+  "Skiff": {
+    "additional-domains": [
+      "bitkeep.app",
+      "ethereum.email",
+      "keplr.xyz",
+      "solana.email"
+    ],
+    "mfa": "allowed",
+    "documentation": "https://www.youtube.com/watch?v=ImSqwEbn3fc",
+    "notes": "Security key MFA required TOTP to be enabled.",
+    "categories": [
+      "email",
+      "backup"
+    ]
+  }
+}

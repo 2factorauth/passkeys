@@ -1,0 +1,7 @@
+{
+  "Microsoft To-Do": {
+    "passwordless": "allowed",
+    "documentation": "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-passwordless",
+    "categories": "task"
+  }
+}

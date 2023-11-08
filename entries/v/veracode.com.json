@@ -1,0 +1,10 @@
+{
+  "Veracode": {
+    "mfa": "allowed",
+    "documentation": "https://help.veracode.com/r/t_configure_mfa",
+    "categories": [
+      "developer",
+      "security"
+    ]
+  }
+}

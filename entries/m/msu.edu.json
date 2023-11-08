@@ -1,0 +1,10 @@
+{
+  "Michigan State University": {
+    "mfa": "allowed",
+    "documentation": "https://secureit.msu.edu/multi-factor/index.html",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

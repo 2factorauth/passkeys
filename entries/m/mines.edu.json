@@ -1,0 +1,10 @@
+{
+  "Colorado School of Mines": {
+    "mfa": "allowed",
+    "documentation": "https://its.mines.edu/mfa/",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

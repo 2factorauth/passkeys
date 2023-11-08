@@ -1,0 +1,10 @@
+{
+  "Cornell University": {
+    "mfa": "allowed",
+    "documentation": "https://it.cornell.edu/twostep",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

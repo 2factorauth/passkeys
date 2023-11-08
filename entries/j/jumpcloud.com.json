@@ -1,0 +1,8 @@
+{
+  "JumpCloud": {
+    "mfa": "allowed",
+    "documentation": "https://jumpcloud.com/support/set-up-authenticator-app-for-user-account",
+    "recovery": "https://jumpcloud.com/support/reset-mfa-in-user-portal",
+    "categories": "identity"
+  }
+}

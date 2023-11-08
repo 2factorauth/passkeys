@@ -1,0 +1,10 @@
+{
+  "Santa Clara University": {
+    "mfa": "allowed",
+    "documentation": "https://scu.edu/technology/get-connected/duo/learn-more-about-2fa/",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "Wefunder": {
+    "mfa": "allowed",
+    "documentation": "https://help.wefunder.com/en_US/multifactor-authentication",
+    "categories": "crowdfunding"
+  }
+}

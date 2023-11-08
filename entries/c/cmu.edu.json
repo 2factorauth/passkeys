@@ -1,0 +1,10 @@
+{
+  "Carnegie Mellon University": {
+    "mfa": "allowed",
+    "documentation": "https://www.cmu.edu/computing/services/security/identity-access/authentication/how-to/use2fa-weblogin.html",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}

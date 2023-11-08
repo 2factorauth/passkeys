@@ -1,0 +1,7 @@
+{
+  "PyPI": {
+    "mfa": "allowed",
+    "documentation": "https://pypi.org/help/#twofa",
+    "categories": "developer"
+  }
+}

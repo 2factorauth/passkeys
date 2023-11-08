@@ -1,0 +1,11 @@
+{
+  "Amazon Web Services": {
+    "mfa": "allowed",
+    "documentation": "https://aws.amazon.com/iam/features/mfa/",
+    "categories": [
+      "cloud",
+      "domains",
+      "hosting"
+    ]
+  }
+}

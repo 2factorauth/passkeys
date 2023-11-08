@@ -1,0 +1,7 @@
+{
+  "Teleport": {
+    "mfa": "allowed",
+    "documentation": "https://goteleport.com/docs/access-controls/guides/webauthn/",
+    "categories": "developer"
+  }
+}

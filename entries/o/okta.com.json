@@ -1,0 +1,9 @@
+{
+  "Okta": {
+    "mfa": "allowed",
+    "passwordless": "allowed",
+    "documentation": "https://help.okta.com/en-us/content/topics/security/mfa/mfa-factors.htm",
+    "notes": "Passkeys can only be set up on an Android, iOS or macOS device.",
+    "categories": "identity"
+  }
+}

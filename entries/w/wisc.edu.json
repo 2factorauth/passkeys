@@ -1,0 +1,10 @@
+{
+  "University of Wisconsin Madison": {
+    "mfa": "allowed",
+    "documentation": "https://it.wisc.edu/services/duo-multi-factor-authentication-mfa/",
+    "regions": [
+      "us"
+    ],
+    "categories": "universities"
+  }
+}
