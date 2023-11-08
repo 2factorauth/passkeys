@@ -4,6 +4,9 @@
 # This script validates common image mistakes.
 
 require 'json'
+require 'net/http'
+require 'uri'
+require 'parallel'
 
 @status = 0
 PNG_SIZE = [[32, 32], [64, 64], [128, 128]].freeze
@@ -14,19 +17,23 @@ def error(file, msg)
   @status = 1
 end
 
-Dir.glob('entries/*/*.json') do |file|
+def alternative_src(image)
+  res = Net::HTTP.get_response URI("https://api.2fa.directory/icons/#{image[0]}/#{image}")
+  res.code.eql? '200'
+end
+
+Parallel.each(Dir.glob('entries/*/*.json'), in_threads: 16) do |file|
   website = JSON.parse(File.read(file)).values[0]
   domain = File.basename(file, '.*')
-  img = website['img']
-  path = "img/#{img.nil? ? "#{domain[0].downcase}/#{domain}.svg" : "#{img[0]}/#{img}"}"
-
-  error(file, "Image does not exist for #{domain} - #{path} cannot be found.") unless File.exist?(path)
-
-  if img.eql?("#{domain}.svg")
+  img = website['img'] || "#{domain}.svg"
+  path = "img/#{img[0]}/#{img}"
+  unless File.exist?(path) || alternative_src(img)
+    error(file, "Image does not exist for #{domain} - #{path} cannot be found.")
+  end
+  if website['img'].eql?("#{domain}.svg")
     error(file, "Defining the img property for #{domain} is not necessary. #{img} is the default value.")
   end
-
-  seen_sites.push(path)
+  seen_sites.push(path) if File.exist?(path)
 end
 
 Dir.glob('img/*/*') do |file|
