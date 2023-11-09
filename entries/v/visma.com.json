@@ -1,0 +1,14 @@
+{
+  "Visma": {
+    "additional-domains": [
+      "dinero.dk",
+      "easycruit.com",
+      "visma.fi",
+      "visma.net",
+      "visma.no",
+      "visma.se"
+    ],
+    "passwordless": "allowed",
+    "categories": "finance"
+  }
+}

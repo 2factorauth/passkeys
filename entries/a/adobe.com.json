@@ -1,0 +1,7 @@
+{
+  "Adobe": {
+    "passwordless": "allowed",
+    "documentation": "https://helpx.adobe.com/manage-account/using/secure-sign-in-with-passkey.html",
+    "categories": "creativity"
+  }
+}

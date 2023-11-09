@@ -1,0 +1,9 @@
+{
+  "Best Buy [US]": {
+    "passwordless": "allowed",
+    "categories": "retail",
+    "regions": [
+      "us"
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 {
   "Apple": {
     "mfa": "allowed",
+    "passwordless": "allowed",
     "documentation": "https://support.apple.com/en-us/HT204915",
     "notes": "Passwordless authentication only works on Apple devices.",
     "categories": "retail"

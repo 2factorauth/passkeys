@@ -1,0 +1,41 @@
+{
+  "eBay": {
+    "additional-domains": [
+      "ebay.com.au",
+      "ebay.at",
+      "ebay.be",
+      "ebay.ca",
+      "ebay.cn",
+      "ebay.fr",
+      "ebay.de",
+      "ebay.com.hk",
+      "ebay.in",
+      "ebay.ie",
+      "ebay.it",
+      "ebay.co.jp",
+      "gmarket.co.kr",
+      "ebay.com.my",
+      "ebay.nl",
+      "ebay.ph",
+      "ebay.pl",
+      "ebay.com.sg",
+      "ebay.es",
+      "ebay.ch",
+      "ebay.com.tw",
+      "ebay.co.uk"
+    ],
+    "img": "ebay.svg",
+    "passwordless": "allowed",
+    "documentation": "https://www.ebay.com/help/account/signing-account/signing-account?id=4189#section2",
+    "categories": "retail",
+    "regions": [
+      "-cu",
+      "-kp",
+      "-ir",
+      "-sy",
+      "-ve",
+      "-ru",
+      "-tr"
+    ]
+  }
+}

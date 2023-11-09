@@ -1,0 +1,8 @@
+{
+  "DocuSign": {
+    "mfa": "allowed",
+    "passwordless": "allowed",
+    "documentation": "https://support.docusign.com/s/document-item?bundleId=jux1643235969954&topicId=niw1651694673085.html",
+    "categories": "legal"
+  }
+}
