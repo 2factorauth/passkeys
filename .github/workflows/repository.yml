@@ -62,7 +62,7 @@ jobs:
         run: |
           mkdir -p public/api/v1
           mkdir -p public/api/private
-          ./scripts/APIv1.rb
+          bundle exec ruby ./scripts/APIv1.rb
       - name: Publish changes to Algolia
         run: bundle exec ruby ./scripts/Algolia.rb
         env:

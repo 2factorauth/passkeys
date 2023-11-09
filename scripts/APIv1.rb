@@ -2,6 +2,8 @@
 # frozen_string_literal: true
 
 require 'json'
+require 'json_schemer'
+
 @entries = 'entries/*/*.json'
 
 # This function generates all public API files that have unnecessary data removed.
@@ -15,7 +17,7 @@ def public_api
   Dir.glob(@entries) { |file| all[File.basename(file, '.*')] = JSON.parse(File.read(file)).values[0] }
   all.sort.to_h.each do |_, entry|
     entry['additional-domains']&.each do |domain|
-      all[domain] = entry.reject { |key| key == 'additional-domains' }
+      all[domain] = entry.reject { |key| %w[additional-domains img categories].include? key }
     end
     entry.delete('additional-domains')
     entry.delete('img')
@@ -67,4 +69,10 @@ def private_api
 end
 
 public_api
+Dir.glob('public/api/v1/*.json').each do |file|
+  data = JSON.parse(File.read(file))
+  schema = JSONSchemer.schema(File.read('tests/api_schema.json'))
+  schema.validate(data).each { |e| p "::error file=#{file}:: #{e['error']}" } unless schema.valid?(data)
+end
+
 private_api

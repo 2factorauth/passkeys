@@ -10,7 +10,7 @@ status = 0
 @seen_names = []
 
 def valid_schema(data)
-  schema = JSONSchemer.schema(File.read('tests/schema.json'))
+  schema = JSONSchemer.schema(File.read('tests/entry_schema.json'))
   schema.valid?(data) ? Array(nil) : schema.validate(data)
 end
 

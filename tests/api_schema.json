@@ -1,0 +1,197 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "2factorauth passkeys public API files",
+  "type": "object",
+  "patternProperties": {
+    "$": {
+      "type": "object",
+      "additionalProperties": false,
+      "propertyNames": {
+        "format": "hostname"
+      },
+      "properties": {
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "mfa": {
+          "type": "string",
+          "pattern": "^(allowed|required)$"
+        },
+        "passwordless": {
+          "type": "string",
+          "pattern": "^(allowed|required)$"
+        },
+        "documentation": {
+          "type": "string",
+          "format": "uri-reference",
+          "pattern": "^(https:|http:)"
+        },
+        "recovery": {
+          "type": "string",
+          "format": "uri"
+        },
+        "notes": {
+          "type": "string",
+          "minLength": 10
+        },
+        "regions": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^-?[a-z]{2}$"
+          }
+        },
+        "additional-domains": {
+          "type": "array",
+          "uniqueItems": true,
+          "minItems": 1,
+          "items": [
+            {
+              "type": "string",
+              "format": "hostname"
+            }
+          ]
+        },
+        "contact": {
+          "type": "object",
+          "additionalProperties": false,
+          "minimum": 1,
+          "properties": {
+            "email": {
+              "type": "string",
+              "format": "email"
+            },
+            "facebook": {
+              "type": "string",
+              "minLength": 1
+            },
+            "twitter": {
+              "type": "string",
+              "pattern": "^(\\w){1,15}$"
+            },
+            "form": {
+              "type": "string",
+              "format": "uri"
+            },
+            "language": {
+              "type": "string",
+              "pattern": "^[a-z]{2}$"
+            }
+          },
+          "not": {
+            "allOf": [
+              {
+                "required": [
+                  "form"
+                ]
+              },
+              {
+                "required": [
+                  "email"
+                ]
+              }
+            ]
+          }
+        }
+      },
+      "oneOf": [
+        {
+          "required": [
+            "contact"
+          ],
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "mfa"
+                ]
+              },
+              {
+                "required": [
+                  "passwordless"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "mfa": {
+              "type": "string",
+              "pattern": "^(allowed|required)$"
+            },
+            "passwordless": {
+              "type": "string",
+              "pattern": "^(allowed|required)$"
+            }
+          },
+          "required": [
+            "mfa",
+            "passwordless"
+          ],
+          "not": {
+            "required": [
+              "contact"
+            ]
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "mfa": {
+              "type": "string",
+              "pattern": "^(allowed|required)$"
+            }
+          },
+          "required": [
+            "mfa"
+          ],
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "passwordless"
+                ]
+              },
+              {
+                "required": [
+                  "contact"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "object",
+          "properties": {
+            "passwordless": {
+              "type": "string",
+              "pattern": "^(allowed|required)$"
+            }
+          },
+          "required": [
+            "passwordless"
+          ],
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "mfa"
+                ]
+              },
+              {
+                "required": [
+                  "contact"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
