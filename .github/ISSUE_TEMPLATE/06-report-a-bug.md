@@ -15,12 +15,12 @@ In Markdown, checkboxes work like this:
 
 Check the box below before submitting your issue to verify that you have already checked for duplicate open issues and pull requests relating to your report. -->
 
-- [ ] I have searched [open issues and pull requests](https://github.com/2factorauth/twofactorauth/issues?q=is%3Aopen). The issue I'm creating is not a duplicate of an existing open issue or pull request.
+- [ ] I have searched [open issues and pull requests](https://github.com/2factorauth/passkeys/issues?q=is%3Aopen). The issue I'm creating is not a duplicate of an existing open issue or pull request.
 
 ### Information about the bug: ###
 **Bug description:**
-<!-- Provide a brief description of the bug. What's going wrong?
-If applicable, also provide screenshots of the bug in action, redacting any personal information. -->
+<!-- Provide a brief description of the bug. Do you know what's going wrong?
+If applicable, provide screenshots of the bug redacting any personal information. -->
 
 
 **Bug reproduction:**
