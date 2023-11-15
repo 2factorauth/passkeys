@@ -5,7 +5,7 @@ Contributing to the repository requires some basic knowledge of JSON syntax and 
 
 ## Eligibility
 
-The following section contains criteria and explanations regarding what services should be listed in the Passkeys Directory.
+The following section contains criteria and explanations regarding what services should be listed in the Passkeys Directory.  
 A new entry must meet all the criteria to be eligible for listing.
 
 1. The websites have a legitimate reason to require authentication, including limiting access to sensitive information or preventing unauthorized users from performing sensitive actions.
@@ -24,10 +24,10 @@ The repository follows a structured organization:
 ## Add entries
 
 ### JSON
-An "entry" represents a website or service in the Passkeys Directory. Each entry is stored as a JSON file in `entries/` subdirectories.
+An "entry" represents a website or service in the Passkeys Directory. Each entry is stored as a JSON file in `entries/` subdirectories.  
 When creating a new entry, give the file the same name as the domain name. For example, an entry for the website `example.com` should be named `example.com.json` and placed in the folder `entries/e/` as _e_ is the first character of the domain name.
 
-The JSON file should contain one object, and the object key should be the name of the website/service.
+The JSON file should contain one object, and the object key should be the name of the website/service.  
 As an example, an entry for `youtube.com` would look like the following:
 ```JSON
 {
@@ -75,21 +75,21 @@ If, on the other hand, the website is available worldwide __except__ for a speci
 
 #### Passwordless
 
-If the service supports passwordless authentication using passkeys, use the `passwordless` element.
+If the service supports passwordless authentication using passkeys, use the `passwordless` element.  
 The `passwordless` element accepts the following values:
 * `"allowed"` - Passwordless authentication is possible to use, but it is possible to turn it off.
 * `"required"` - Passwordless authentication is enforced for all users with no way of turning it off.
 
 #### MFA
 
-If the service supports passkey authentication as the second factor, i.e., in conjunction with a password or one-time code, use the `mfa` element.
+If the service supports passkey authentication as the second factor, i.e., in conjunction with a password or one-time code, use the `mfa` element.  
 The `mfa` element accepts the following values:
 * `"allowed"` - It is possible to enable passkey MFA authentication.
 * `"required"` - passkey MFA authentication is always enabled with no way of deactivating it.
 
 #### Contact
 
-If a service doesn't support passkey authentication, use the `contact` element to tell users how to ask the company to support passkeys.
+If a service doesn't support passkey authentication, use the `contact` element to tell users how to ask the company to support passkeys.  
 The `contact` element is an object and supports the following values:
 * `facebook` - The service's Facebook page handle.
 * `twitter` - The service's Twitter/X handle.
@@ -109,7 +109,7 @@ The `contact` element is an object and supports the following values:
 ```
 
 ### Categories
-Linking entries to categories enhances the directory's usability. Each entry should be associated with at least one relevant category.
+Linking entries to categories enhances the directory's usability. Each entry should be associated with at least one relevant category.  
 Below is a table of each available category, the name of the category, and which title it has on the Passkeys Directory with a description.
 
 | Name             |           Title           | Description                                                                         |
@@ -176,6 +176,10 @@ If linking to more than one, add each category in an array.
 
 ### Icons
 
+> [!IMPORTANT]
+> If you're adding a website that already exists on [2fa.directory][2fadir], you can skip this step.\
+> This project automatically falls back to serving the image from 2fa.directory.
+
 Icons enhance brand recognition and contribute to a cohesive user experience within the Passkeys Directory. When adding a new entry, including an icon is mandatory.
 
 Icons should be placed in `img/` subdirectories and named after the entry's domain. For instance, the icon for `youtube.com` should be in `img/y/` and named `youtube.com.svg` or `youtube.com.png`.
@@ -199,3 +203,4 @@ Thank you for contributing to the Passkeys Directory! Should you have any questi
 [svgomg]: https://jakearchibald.github.io/svgomg/
 [tinypng]: https://tinypng.com/
 [issue]: https://github.com/2factorauth/passkeys/issues/new/choose
+[2fadir]: https://2fa.directory/
