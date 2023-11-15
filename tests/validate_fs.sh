@@ -32,11 +32,11 @@ function checkPerm()
 }
 
 [ -e api ] && checkExt api json sig
-checkExt img svg png
+checkExt icons svg png
 checkExt entries json
 checkExt scripts rb
 checkExt tests rb sh json
-checkPerm img 664 644
+checkPerm icons 664 644
 checkPerm tests 775 755 664 644
 checkPerm entries 664 644
 checkPerm scripts 775 755

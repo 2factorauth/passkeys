@@ -80,7 +80,7 @@ jobs:
           PGP_PASSWORD: ${{ secrets.PGP_PASSWORD }}
           PGP_KEY_ID: ${{ steps.pgp.outputs.keyid }}
       - name: Prepare publish directory
-        run: mv img/ public/icons
+        run: mv icons/ public/icons
       - uses: actions/upload-pages-artifact@v1
         with:
           path: public/

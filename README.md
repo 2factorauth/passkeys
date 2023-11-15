@@ -40,7 +40,7 @@ We welcome all contributions to the project, but please read [CONTRIBUTING.md][c
 The data in this repository is licensed under a Creative Commons Attribution 4.0 International License.  
 A copy of the license can be found in the [LICENSE.md][license] file, and on [creativecommons.org](https://creativecommons.org/licenses/by/4.0/).
 
-The images inside `img/` are not subject to the repository's license; their respective authors own them.  
+The images inside `icons/` are not subject to the repository's license; their respective authors own them.  
 Our intention is to showcase and utilize these images in a manner that respects the original creators' work and complies with fair use principles.
 
 [api]: https://passkeys.2fa.directory/api/

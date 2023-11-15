@@ -182,7 +182,7 @@ If linking to more than one, add each category in an array.
 
 Icons enhance brand recognition and contribute to a cohesive user experience within the Passkeys Directory. When adding a new entry, including an icon is mandatory.
 
-Icons should be placed in `img/` subdirectories and named after the entry's domain. For instance, the icon for `youtube.com` should be in `img/y/` and named `youtube.com.svg` or `youtube.com.png`.
+Icons should be placed in `icons/` subdirectories and named after the entry's domain. For instance, the icon for `youtube.com` should be in `icons/y/` and named `youtube.com.svg` or `youtube.com.png`.
 
 SVG format is preferred due to its smaller size and compatibility with various resolutions. If you don't have an SVG icon, a PNG is acceptable with resolutions of 32x32, 64x64, or 128x128. For SVG icons, consider optimizing them using tools like [SVGOMG][svgomg] to reduce the file size.
 

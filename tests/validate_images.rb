@@ -26,7 +26,7 @@ Parallel.each(Dir.glob('entries/*/*.json'), in_threads: 16) do |file|
   website = JSON.parse(File.read(file)).values[0]
   domain = File.basename(file, '.*')
   img = website['img'] || "#{domain}.svg"
-  path = "img/#{img[0]}/#{img}"
+  path = "icons/#{img[0]}/#{img}"
   unless File.exist?(path) || alternative_src(img)
     error(file, "Image does not exist for #{domain} - #{path} cannot be found.")
   end
@@ -36,7 +36,7 @@ Parallel.each(Dir.glob('entries/*/*.json'), in_threads: 16) do |file|
   seen_sites.push(path) if File.exist?(path)
 end
 
-Dir.glob('img/*/*') do |file|
+Dir.glob('icons/*/*') do |file|
   next if file.include? '/icons/'
 
   error(file, 'Unused image') unless seen_sites.include? file

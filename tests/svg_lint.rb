@@ -23,7 +23,7 @@ def test(svg_content, xpath_expression, parent_element = '/svg')
 end
 
 @status = 0
-diff = `git diff --name-only --diff-filter=Ard origin/master...HEAD -- 'img/***.svg'`.split("\n")
+diff = `git diff --name-only --diff-filter=Ard origin/master...HEAD -- 'icons/***.svg'`.split("\n")
 diff.each do |file|
   svg = File.read(file)
   error(file, 'Invalid SVG file') if Nokogiri::XML(svg).errors.any?
