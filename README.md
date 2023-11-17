@@ -48,4 +48,4 @@ Our intention is to showcase and utilize these images in a manner that respects 
 [license]: /LICENSE
 [contrib]: /CONTRIBUTING.md
 [site_url]: https://passkeys.2fa.directory/
-[frontend]: https://github.com/2factorauth/frontend/
+[frontend]: https://github.com/2factorauth/passkeys.2fa.directory/
