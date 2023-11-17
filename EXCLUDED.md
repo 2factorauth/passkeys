@@ -67,8 +67,8 @@ Any site that could damage the reputation of the [Passkeys Directory][website] a
 maintainers or users, should not be listed.
 The group of active maintainers will decide on whether to include or exclude a site within a specific timeframe.
 
-[website]: https://passkey.2fa.directory
-[maintainers]: https://passkey.2fa.directory/about
+[website]: https://passkeys.2fa.directory
+[maintainers]: https://passkeys.2fa.directory/about
 [license]: /LICENSE.md
 [eligibility]: /CONTRIBUTING.md#eligibility
 [org_link]: https://github.com/2factorauth
