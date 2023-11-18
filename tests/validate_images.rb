@@ -27,9 +27,14 @@ Parallel.each(Dir.glob('entries/*/*.json'), in_threads: 16) do |file|
   domain = File.basename(file, '.*')
   img = website['img'] || "#{domain}.svg"
   path = "icons/#{img[0]}/#{img}"
-  unless File.exist?(path) || alternative_src(img)
+  exists_locally = File.exist?(path)
+  exists_remotely = alternative_src(img)
+  if exists_locally || exists_remotely
+    error(file, 'Image already exists in 2fa.directory.') unless exists_locally ^ exists_remotely
+  else
     error(file, "Image does not exist for #{domain} - #{path} cannot be found.")
   end
+
   if website['img'].eql?("#{domain}.svg")
     error(file, "Defining the img property for #{domain} is not necessary. #{img} is the default value.")
   end
