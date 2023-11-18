@@ -45,7 +45,7 @@ Our intention is to showcase and utilize these images in a manner that respects 
 
 [api]: https://passkeys.2fa.directory/api/
 [sponsor]: https://github.com/sponsors/2factorauth/
-[license]: /LICENSE
+[license]: /LICENSE.md
 [contrib]: /CONTRIBUTING.md
 [site_url]: https://passkeys.2fa.directory/
 [frontend]: https://github.com/2factorauth/passkeys.2fa.directory/
