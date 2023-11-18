@@ -2,7 +2,7 @@
   "Shopify": {
     "mfa": "allowed",
     "passwordless": "allowed",
-    "documentation": "https://help.shopify.com/manual/your-account/account-security/two-step-authentication",
+    "documentation": "https://help.shopify.com/en/manual/your-account/logging-in/passkeys",
     "categories": "other"
   }
 }
