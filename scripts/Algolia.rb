@@ -9,7 +9,7 @@ ALGOLIA_APP_ID = ENV['ALGOLIA_APP_ID']
 ALGOLIA_API_KEY = ENV['ALGOLIA_API_KEY']
 ALGOLIA_INDEX_NAME = ENV['ALGOLIA_INDEX_NAME']
 
-excludes = %w[notes documentation recovery]
+excludes = %w[notes documentation recovery passwordless mfa]
 client = Algolia::Search::Client.create(ALGOLIA_APP_ID, ALGOLIA_API_KEY)
 index = client.init_index(ALGOLIA_INDEX_NAME)
 updates = []
@@ -27,6 +27,14 @@ diff.each do |entry|
     data.merge!({ 'name' => name, 'objectID' => File.basename(entry, '.*') })
     # Rename keys
     data['category'] = data.delete 'categories'
+
+    %w[mfa passwordless].each do |key|
+      next unless data.key?(key)
+
+      data['supported'] ||= []
+      data['supported'] << key
+    end
+
     # Remove keys that shouldn't be searchable
     data.reject! { |k, _| excludes.include? k }
     updates.push data
