@@ -1,0 +1,7 @@
+{
+  "Lnk.Bio": {
+    "passwordless": "allowed",
+    "documentation": "https://lnk.bio/linkin/log-in-with-passkeys-to-lnkbio",
+    "categories": "social"
+  }
+}
