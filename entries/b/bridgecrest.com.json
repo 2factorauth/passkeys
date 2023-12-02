@@ -1,0 +1,9 @@
+{
+  "Bridgecrest": {
+    "passwordless": "allowed",
+    "categories": "finance",
+    "regions": [
+      "us"
+    ]
+  }
+}
