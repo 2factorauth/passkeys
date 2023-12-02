@@ -1,0 +1,23 @@
+{
+  "OKX": {
+    "passwordless": "allowed",
+    "documentation": "https://www.okx.com/help/how-do-i-create-passkeys-web",
+    "categories": "cryptocurrencies",
+    "regions": [
+      "-bd",
+      "-bo",
+      "-cu",
+      "-ec",
+      "-gb",
+      "-hk",
+      "-ir",
+      "-kg",
+      "-kp",
+      "-mt",
+      "-my",
+      "-sd",
+      "-sy",
+      "-us"
+    ]
+  }
+}
