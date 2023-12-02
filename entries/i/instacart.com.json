@@ -1,0 +1,13 @@
+{
+  "Instacart": {
+    "additional-domains": [
+      "instacart.ca"
+    ],
+    "passwordless": "allowed",
+    "categories": "retail",
+    "regions": [
+      "ca",
+      "us"
+    ]
+  }
+}
