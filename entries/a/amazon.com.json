@@ -1,0 +1,28 @@
+{
+  "Amazon": {
+    "additional-domains": [
+      "amazon.ae",
+      "amazon.ca",
+      "amazon.cn",
+      "amazon.co.jp",
+      "amazon.co.uk",
+      "amazon.com.au",
+      "amazon.com.br",
+      "amazon.com.mx",
+      "amazon.com.tr",
+      "amazon.de",
+      "amazon.es",
+      "amazon.fr",
+      "amazon.in",
+      "amazon.it",
+      "amazon.nl",
+      "amazon.sa",
+      "amazon.se",
+      "amazon.sg"
+    ],
+    "passwordless": "allowed",
+    "documentation": "https://www.amazon.com/gp/help/customer/display.html?nodeId=TPphmhSWBgcI9Ak87p",
+    "notes": "Passkeys must be activated individually on different regional Amazon sites, such as UK and DE.",
+    "categories": "retail"
+  }
+}
