@@ -1,0 +1,9 @@
+{
+  "KAYAK": {
+    "passwordless": "allowed",
+    "categories": [
+      "hotels",
+      "transport"
+    ]
+  }
+}
