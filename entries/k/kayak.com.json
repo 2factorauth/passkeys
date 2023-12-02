@@ -1,9 +1,47 @@
 {
   "KAYAK": {
+    "additional-domains": [
+      "kayak.co.in",
+      "kayak.co.jp",
+      "kayak.co.uk",
+      "kayak.com.au",
+      "kayak.com.mx",
+      "kayak.de",
+      "kayak.es",
+      "kayak.fr",
+      "kayak.ie",
+      "kayak.it",
+      "kayak.nl",
+      "kayak.no",
+      "kayak.ru",
+      "kayak.se",
+      "kayak.sg"
+    ],
     "passwordless": "allowed",
     "categories": [
       "hotels",
       "transport"
+    ],
+    "regions": [
+      "au",
+      "ca",
+      "cn",
+      "de",
+      "es",
+      "fi",
+      "fr",
+      "gb",
+      "ie",
+      "in",
+      "it",
+      "jp",
+      "kr",
+      "mx",
+      "nl",
+      "no",
+      "ru",
+      "sg",
+      "us"
     ]
   }
 }
