@@ -1,0 +1,8 @@
+{
+  "Robinhood": {
+    "passwordless": "allowed",
+    "documentation": "https://robinhood.com/us/en/support/articles/passkeys/",
+    "categories": "investing",
+    "regions": ["us"]
+  }
+}
