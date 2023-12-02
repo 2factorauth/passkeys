@@ -1,0 +1,7 @@
+{
+  "Tailscale": {
+    "passwordless": "allowed",
+    "documentation": "https://tailscale.com/kb/1269",
+    "categories": "remote"
+  }
+}
