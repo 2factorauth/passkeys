@@ -1,0 +1,7 @@
+{
+  "TikTok": {
+    "passwordless": "allowed",
+    "documentation": "https://support.tiktok.com/en/log-in-troubleshoot/log-in/log-in-with-a-passkey",
+    "categories": "social"
+  }
+}
