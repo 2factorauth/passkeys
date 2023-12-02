@@ -1,0 +1,7 @@
+{
+  "Hyatt": {
+    "passwordless": "allowed",
+    "documentation": "https://www.hyatt.com/member/passkey/what-is-passkey",
+    "categories": "hotels"
+  }
+}
