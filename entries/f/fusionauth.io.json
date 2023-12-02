@@ -1,0 +1,8 @@
+{
+  "FusionAuth": {
+    "passwordless": "allowed",
+    "documentation": "https://fusionauth.io/docs/lifecycle/manage-users/account-management/add-webauthn",
+    "notes": "Requires Essentials or Enterprise plan",
+    "categories": "identity"
+  }
+}
