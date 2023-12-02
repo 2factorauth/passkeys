@@ -1,0 +1,10 @@
+{
+  "CVS Caremark": {
+    "img": "cvs.com.svg",
+    "passwordless": "allowed",
+    "categories": "health",
+    "regions": [
+      "us"
+    ]
+  }
+}
