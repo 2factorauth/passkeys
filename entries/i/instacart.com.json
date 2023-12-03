@@ -1,0 +1,14 @@
+{
+  "Instacart": {
+    "passwordless": "allowed",
+    "documentation": "https://www.instacart.com/company/shopper-community/new-features-to-make-your-experience-seamless/",
+    "categories": [
+      "food",
+      "retail"
+    ],
+    "regions": [
+      "ca",
+      "us"
+    ]
+  }
+}

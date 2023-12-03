@@ -1,0 +1,52 @@
+{
+  "Virgin Media": {
+    "additional-domains": [
+      "o2.co.uk"
+    ],
+    "passwordless": "allowed",
+    "documentation": "https://www.virginmedia.com/help/account/what-is-device-authentication",
+    "categories": "utilities",
+    "regions": [
+      "at",
+      "be",
+      "bg",
+      "cy",
+      "cz",
+      "de",
+      "dk",
+      "ee",
+      "es",
+      "fi",
+      "fr",
+      "gb",
+      "gf",
+      "gg",
+      "gi",
+      "gr",
+      "hr",
+      "hu",
+      "ie",
+      "im",
+      "is",
+      "it",
+      "je",
+      "li",
+      "lt",
+      "lu",
+      "lv",
+      "mc",
+      "mt",
+      "nl",
+      "no",
+      "pl",
+      "pt",
+      "re",
+      "ro",
+      "se",
+      "si",
+      "sk",
+      "sm",
+      "va"
+    ]
+  }
+}

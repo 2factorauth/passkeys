@@ -1,0 +1,10 @@
+{
+  "Boursorama": {
+    "passwordless": "allowed",
+    "documentation": "https://www.boursobank.com/aide-en-ligne/securite/proteger-mon-espace-client/question/5165516",
+    "categories": "investing",
+    "regions": [
+      "fr"
+    ]
+  }
+}

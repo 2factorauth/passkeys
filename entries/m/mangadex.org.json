@@ -1,0 +1,7 @@
+{
+  "MangaDex": {
+    "passwordless": "allowed",
+    "mfa": "allowed",
+    "categories": "entertainment"
+  }
+}

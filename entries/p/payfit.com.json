@@ -1,0 +1,14 @@
+{
+  "PayFit": {
+    "passwordless": "allowed",
+    "documentation": "https://support.payfit.com/en/articles/73141#h_ac4cfb3047",
+    "notes": "TOTP or SMS must be used to set up passkeys.",
+    "categories": "finance",
+    "regions": [
+      "de",
+      "es",
+      "fr",
+      "gb"
+    ]
+  }
+}

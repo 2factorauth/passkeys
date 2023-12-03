@@ -1,0 +1,9 @@
+{
+  "VK": {
+    "additional-domains": [
+      "vk.ru"
+    ],
+    "passwordless": "allowed",
+    "categories": "social"
+  }
+}

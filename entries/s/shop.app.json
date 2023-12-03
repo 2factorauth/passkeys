@@ -1,0 +1,33 @@
+{
+  "Shop": {
+    "img": "shopify.com.svg",
+    "passwordless": "allowed",
+    "documentation": "https://help.shop.app/hc/articles/12637752526868",
+    "categories": "payments",
+    "regions": [
+      "at",
+      "au",
+      "be",
+      "ca",
+      "ch",
+      "cz",
+      "de",
+      "dk",
+      "es",
+      "fi",
+      "fr",
+      "gb",
+      "hk",
+      "ie",
+      "it",
+      "jp",
+      "nl",
+      "nz",
+      "pt",
+      "ro",
+      "se",
+      "sg",
+      "us"
+    ]
+  }
+}
