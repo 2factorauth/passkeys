@@ -1,6 +1,7 @@
 {
   "Crowdin": {
     "passwordless": "allowed",
+    "mfa": "allowed",
     "categories": "developer"
   }
 }
