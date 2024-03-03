@@ -1,0 +1,10 @@
+{
+  "PlayStation": {
+    "additional-domains": [
+      "sonyentertainmentnetwork.com"
+    ],
+    "passwordless": "allowed",
+    "documentation": "https://www.playstation.com/passkey/",
+    "categories": "gaming"
+  }
+}
