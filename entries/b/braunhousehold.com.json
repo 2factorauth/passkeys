@@ -1,0 +1,10 @@
+{
+  "Braun": {
+    "additional-domains": [
+      "delonghi.com",
+      "kenwoodworld.com"
+    ],
+    "passwordless": "allowed",
+    "categories": "retail"
+  }
+}
