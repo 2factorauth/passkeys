@@ -1,5 +1,6 @@
 {
   "Carnival": {
+    "img": "carnival.com.png",
     "passwordless": "allowed",
     "categories": "transport"
   }
