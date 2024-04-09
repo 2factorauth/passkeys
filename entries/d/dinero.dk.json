@@ -3,6 +3,9 @@
     "passwordless": "allowed",
     "mfa": "allowed",
     "documentation": "https://dinero.dk/support/to-faktor-login",
-    "categories": "finance"
+    "categories": "finance",
+    "regions": [
+      "dk"
+    ]
   }
 }
