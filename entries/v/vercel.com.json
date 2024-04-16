@@ -1,0 +1,10 @@
+{
+  "Vercel": {
+    "passwordless": "allowed",
+    "categories": [
+      "cloud",
+      "hosting",
+      "marketing"
+    ]
+  }
+}
