@@ -5,7 +5,7 @@
     ],
     "mfa": "allowed",
     "notes": "An eligible Apple or Android device is required to create a passkey.",
-    "documentation": "https://www.paypal.com/us/cshelp/article/what-is-a-passkey-and-how-do-i-use-it-to-log-in-to-my-paypal-account-help997",
+    "documentation": "https://www.paypal.com/us/cshelp/article/help997",
     "categories": "payments"
   }
 }
