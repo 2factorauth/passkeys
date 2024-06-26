@@ -1,0 +1,10 @@
+{
+  "myGov": {
+    "passwordless": "allowed",
+    "documentation": "https://my.gov.au/en/about/help/mygov-website/sign-in-to-mygov/use-passkeys",
+    "categories": "government",
+    "regions": [
+      "au"
+    ]
+  }
+}
