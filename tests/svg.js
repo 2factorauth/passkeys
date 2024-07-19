@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require('fs');
 const {DOMParser} = require('@xmldom/xmldom');
 const xpath = require('xpath');

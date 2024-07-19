@@ -15,6 +15,7 @@ const readJSONFile = async (filePath) => {
 };
 
 const writeJSONFile = async (filePath, data) => {
+  core.debug(`Writing to ${filePath}`)
   await fs.writeFile(filePath, JSON.stringify(data, null, 2));
 };
 

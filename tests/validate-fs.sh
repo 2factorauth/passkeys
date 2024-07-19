@@ -34,12 +34,11 @@ function checkPerm()
 [ -e api ] && checkExt api json sig
 checkExt icons svg png
 checkExt entries json
-checkExt scripts js
+checkExt scripts js sh
 checkExt tests js sh json
 checkPerm icons 664 644
 checkPerm tests 775 755 664 644
 checkPerm entries 664 644
 checkPerm scripts 775 755
-checkPerm .circleci 664 644
 checkPerm .github 664 644
 exit $status

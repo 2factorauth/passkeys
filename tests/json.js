@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const fs = require('fs').promises;
 const core = require('@actions/core');
 const Ajv = require('ajv');
@@ -66,25 +68,15 @@ function validateJSONSchema(file, json) {
  * @param {object} entry - The main entry object within the JSON content.
  */
 function validateFileContents(file, entry) {
-  const valid_name = `${entry.domain}.json`;
+  const domain = basename(file, '.json');
 
-  if (basename(file) !== valid_name) error(`File name should be ${valid_name}`, {file, title: 'File name'});
+  if (entry['url'] === `https://${domain}`) error(`Unnecessary url element defined.`, {file});
 
-  if (entry.url === `https://${entry.domain}`) error(`Unnecessary url element defined.`, {file});
+  if (entry['img'] === `${entry.domain}.svg`) error(`Unnecessary img element defined.`, {file});
 
-  if (entry.img === `${entry.domain}.svg`) error(`Unnecessary img element defined.`, {file});
+  if (file !== `entries/${domain[0]}/${domain}.json`) error(`Entry should be placed in entries/${domain[0]}/`, {file});
 
-  if (file !== `entries/${entry.domain[0]}/${valid_name}`) error(
-    `Entry should be placed in entries/${entry.domain[0]}/`, {file});
-
-  if (entry.tfa?.includes('custom-software') && !entry['custom-software']) error('Missing custom-software element',
-    {file});
-
-  if (entry.tfa?.includes('custom-hardware') && !entry['custom-hardware']) error('Missing custom-hardware element',
-    {file});
-
-  if (entry.tfa && !entry.documentation) core.warning(
-    'No documentation set. Please provide screenshots in the pull request', {file, title: 'Missing documentation'});
+  if((entry['mfa'] || entry['passwordless']) && !entry['documentation']) core.warning('Since there is no documentation available, please could you provide us with screenshots of the setup/login process as evidence of 2FA? Please remember to block out any personal information.', {file, title: 'Missing Documentation'});
 }
 
 module.exports = main();
