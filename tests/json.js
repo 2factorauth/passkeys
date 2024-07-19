@@ -76,7 +76,7 @@ function validateFileContents(file, entry) {
 
   if (file !== `entries/${domain[0]}/${domain}.json`) error(`Entry should be placed in entries/${domain[0]}/`, {file});
 
-  if((entry['mfa'] || entry['passwordless']) && !entry['documentation']) core.warning('Since there is no documentation available, please could you provide us with screenshots of the setup/login process as evidence of 2FA? Please remember to block out any personal information.', {file, title: 'Missing Documentation'});
+  if((entry['mfa'] || entry['passwordless']) && !entry['documentation']) core.warning('Please add documentation or provide a screenshot of the passkey setup-process.', {file, title: 'Missing Documentation'});
 }
 
 module.exports = main();
