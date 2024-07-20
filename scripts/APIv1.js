@@ -78,14 +78,16 @@ const privateApi = async (allEntries) => {
     const {regions: entryRegions, 'additional-domains': additionalDomains, ...processedEntry} = entry;
 
     if (entryRegions) {
+      console.log(entryRegions)
       entryRegions.forEach((region) => {
+
         if (region[0] !== '-') {
           regions[region] = regions[region] || {count: 0};
           regions[region].count += 1;
         }
       });
     }
-
+    processedEntry.regions = entryRegions
     processedEntry.categories = Array.isArray(entry.categories) ?
       entry.categories:
       entry.categories ? [entry.categories]:[];
@@ -106,7 +108,7 @@ const privateApi = async (allEntries) => {
 };
 
 const validateSchema = async () => {
-  const schema = await readJSONFile('tests/api_schema.json');
+  const schema = await readJSONFile('tests/schemas/api_schema.json');
   const validator = new Validator();
 
   const files = glob.sync('public/v1/*.json');
@@ -135,6 +137,7 @@ const fetch2FAEntries = async () => {
         domain: entry.domain,
         contact: entry.contact,
         categories: entry.keywords.length === 1 ? entry.keywords[0]:entry.keywords,
+        regions: entry.regions
       };
       if (entry.contact) {
         publicEntries[entry.domain] = {
@@ -152,6 +155,7 @@ const fetch2FAEntries = async () => {
         recovery: entry.recovery,
         notes: entry.notes,
         categories: entry.keywords,
+        regions: entry.regions
       };
       publicEntries[entry.domain] = {
         mfa: 'allowed',

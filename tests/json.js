@@ -4,9 +4,8 @@ const fs = require('fs').promises;
 const core = require('@actions/core');
 const Ajv = require('ajv');
 const addFormats = require('ajv-formats');
-const schema = require('./entry_schema.json');
+const schema = require('./schemas/entry_schema.json');
 const {basename} = require('node:path');
-const path = require('path');
 
 const ajv = new Ajv({strict: false, allErrors: true});
 addFormats(ajv);
@@ -36,7 +35,7 @@ async function main() {
       validateJSONSchema(file, json);
       validateFileContents(file, entry);
     } catch (e) {
-      error(`Failed to process ${file}: ${err.message}`, {file});
+      error(`Failed to process ${file}: ${e.message}`, {file});
     }
   }));
 
@@ -53,10 +52,10 @@ function validateJSONSchema(file, json) {
   const valid = validate(json);
   if (!valid) {
     errors = true;
-    validate.errors.forEach((err) => {
-      const {message, instancePath, keyword: title} = err;
+    validate.errors.forEach((e) => {
+      const {message, instancePath, keyword: title} = e;
       const instance = instancePath?.split('/');
-      if (message) error(`${instance[instance.length - 1]} ${message}`, {file, title}); else error(err, {file});
+      if (message) error(`${instance[instance.length - 1]} ${message}`, {file, title}); else error(e, {file});
     });
   }
 }

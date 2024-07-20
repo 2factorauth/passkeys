@@ -6,8 +6,7 @@ const {glob} = require('glob');
 const path = require('path');
 
 // Allowed image dimensions
-const PNG_RES = [
-  [16, 16], [32, 32], [64, 64], [128, 128]];
+const PNG_RES = [[16, 16], [32, 32], [64, 64], [128, 128]];
 
 let seenImages = [];
 let errors = false;
@@ -22,23 +21,35 @@ async function main() {
   process.exit(+errors);
 }
 
+async function alternativeSource(image) {
+  const res = await fetch(`https://api.2fa.directory/${image}`, {
+    headers: {
+      'user-agent': '2factorauth/passkeys +https://2fa.directory/bots',
+    },
+  });
+  return res.ok;
+}
+
 async function parseEntries(entries) {
   await Promise.all(entries.map(async (file) => {
-    const data = await fs.readFile(file, 'utf8');
-    const json = await JSON.parse(data);
-    const entry = json[Object.keys(json)[0]];
-    const {img} = entry;
-    const domain = path.parse(file).name;
-    const imgPath = `icons/${img ? `${img[0]}/${img}`:`${domain[0]}/${domain}.svg`}`;
+      const data = await fs.readFile(file, 'utf8');
+      const json = await JSON.parse(data);
+      const entry = json[Object.keys(json)[0]];
+      const {img} = entry;
+      const domain = path.parse(file).name;
+      const imgPath = `icons/${img ? `${img[0]}/${img}`:`${domain[0]}/${domain}.svg`}`;
 
-    try {
-      await fs.readFile(imgPath);
-    } catch (e) {
-      core.error(`Image ${imgPath} not found.`, {file});
-      errors = true;
-    }
-    seenImages.push(imgPath);
-  }));
+      try {
+        await fs.readFile(imgPath);
+        seenImages.push(imgPath);
+      } catch (e) {
+        if (!await alternativeSource(imgPath)) {
+          core.error(`Image ${imgPath} not found.`, {file});
+          errors = true;
+        }
+      }
+    }),
+  );
 }
 
 async function parseImages(images) {
