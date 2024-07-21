@@ -11,10 +11,11 @@
     "jsonschema": "^1.4.1"
   },
   "devDependencies": {
+    "@xmldom/xmldom": "^0.8.10",
+    "abort-controller": "^3.0.0",
     "ajv": "^8.17.1",
     "ajv-errors": "^3.0.0",
     "ajv-formats": "^3.0.1",
-    "@xmldom/xmldom": "^0.8.10",
     "xpath": "^0.0.34"
   }
 }
