@@ -3,8 +3,9 @@
     "additional-domains": [
       "paypal-search.com"
     ],
-    "mfa": "allowed",
-    "documentation": "https://www.paypal.com/us/smarthelp/article/faq4057",
+    "passwordless": "allowed",
+    "notes": "An eligible Apple or Android device is required to create a passkey.",
+    "documentation": "https://www.paypal.com/us/cshelp/article/help997",
     "categories": "payments"
   }
 }

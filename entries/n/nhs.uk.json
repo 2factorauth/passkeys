@@ -1,0 +1,10 @@
+{
+  "NHS": {
+    "passwordless": "allowed",
+    "documentation": "https://help.login.nhs.uk/manage/passkeys/",
+    "categories": "health",
+    "regions": [
+      "gb"
+    ]
+  }
+}

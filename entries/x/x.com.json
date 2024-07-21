@@ -1,0 +1,11 @@
+{
+  "X (Twitter)": {
+    "additional-domains": [
+      "twitter.com"
+    ],
+    "mfa": "allowed",
+    "documentation": "https://help.x.com/managing-your-account/how-to-use-passkey",
+    "recovery": "https://help.x.com/managing-your-account/issues-with-login-authentication",
+    "categories": "social"
+  }
+}
