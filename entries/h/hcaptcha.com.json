@@ -1,0 +1,10 @@
+{
+  "hCaptcha": {
+    "passwordless": "allowed",
+    "mfa": "allowed",
+    "categories": [
+      "security",
+      "developer"
+    ]
+  }
+}
