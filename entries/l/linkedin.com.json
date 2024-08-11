@@ -1,0 +1,9 @@
+{
+  "LinkedIn": {
+    "passwordless": "allowed",
+    "documentation": "https://www.linkedin.com/help/linkedin/answer/a1621596",
+    "categories": [
+      "social"
+    ]
+  }
+}
