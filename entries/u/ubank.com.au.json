@@ -1,0 +1,10 @@
+{
+  "UBank": {
+    "passwordless": "allowed",
+    "documentation": "https://www.ubank.com.au/help/current/app-and-online-banking/passkeys/how-do-i-add-passkeys-to-sign-in-to-my-ubank-app",
+    "categories": "banking",
+    "regions": [
+      "au"
+    ]
+  }
+}
