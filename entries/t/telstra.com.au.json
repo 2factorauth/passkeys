@@ -1,0 +1,18 @@
+{
+  "Telstra": {
+    "additional-domains": [
+      "telstra.com",
+      "bigpond.com",
+      "bigpond.com.au"
+    ],
+    "passwordless": "allowed",
+    "documentation": "https://www.telstra.com.au/support/account-payment/set-up-and-manage-a-passkey",
+    "categories": [
+      "utilities",
+      "email"
+    ],
+    "regions": [
+      "au"
+    ]
+  }
+}
