@@ -11,7 +11,7 @@ const core = require('@actions/core');
  */
 async function fetchCategories() {
   const res = await fetch(
-    'https://raw.githubusercontent.com/2factorauth/passkeys.2fa.directory/master/data/categories.json', {
+    'https://raw.githubusercontent.com/2factorauth/twofactorauth/master/tests/categories.json', {
       headers: {
         accept: 'application/json',
         'user-agent': '2factorauth/passkeys +https://2fa.directory/bots',
