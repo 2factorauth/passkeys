@@ -4,8 +4,11 @@
       "bofa.com",
       "mbna.com"
     ],
-    "mfa": "allowed",
-    "documentation": "https://www.bankofamerica.com/security-center/online-banking/",
+    "contact": {
+      "twitter": "BofA_Help",
+      "facebook": "BankofAmerica",
+      "form": "https://www.bankofamerica.com/deposits/contact-bank-of-america-faqs/"
+    },
     "regions": [
       "us"
     ],
