@@ -1,0 +1,23 @@
+{
+  "Square": {
+    "additional-domains": [
+      "weebly.com"
+    ],
+    "passwordless": "allowed",
+    "documentation": "https://squareup.com/help/us/en/article/8460-create-a-passkey",
+    "categories": [
+      "hosting",
+      "payments"
+    ],
+    "regions": [
+      "au",
+      "ca",
+      "fr",
+      "ie",
+      "jp",
+      "es",
+      "gb",
+      "us"
+    ]
+  }
+}
