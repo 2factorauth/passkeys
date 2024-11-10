@@ -1,0 +1,23 @@
+{
+  "Square": {
+    "additional-domains": [
+      "weebly.com"
+    ],
+    "passwordless": "allowed",
+    "documentation": "https://squareup.com/help/article/8460",
+    "categories": [
+      "hosting",
+      "payments"
+    ],
+    "regions": [
+      "au",
+      "ca",
+      "fr",
+      "ie",
+      "jp",
+      "es",
+      "gb",
+      "us"
+    ]
+  }
+}
