@@ -1,0 +1,16 @@
+{
+  "Migros": {
+    "passwordless": "allowed",
+    "categories": "retail",
+    "documentation": "https://account.migros.ch/help#faqPasskeyPrio",
+    "recovery": "https://account.migros.ch/help#faqPasskeyProblem",
+    "regions": [
+      "at",
+      "ch",
+      "de",
+      "fr",
+      "it",
+      "li"
+    ]
+  }
+}
