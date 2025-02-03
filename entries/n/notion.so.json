@@ -1,6 +1,5 @@
 {
   "Notion": {
-    "domain": "notion.so",
     "passwordless": "allowed",
     "documentation": "https://www.notion.com/help/passkeys",
     "categories": "communication"
