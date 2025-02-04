@@ -1,0 +1,7 @@
+{
+  "Notion": {
+    "passwordless": "allowed",
+    "documentation": "https://www.notion.com/help/passkeys",
+    "categories": "communication"
+  }
+}
