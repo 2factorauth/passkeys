@@ -1,0 +1,10 @@
+{
+  "Bundesagentur für Arbeit": {
+    "passwordless": "allowed",
+    "documentation": "https://www.arbeitsagentur.de/passkey",
+    "regions": [
+      "de"
+    ],
+    "categories": "government"
+  }
+}
