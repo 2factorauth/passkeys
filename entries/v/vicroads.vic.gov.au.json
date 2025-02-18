@@ -1,0 +1,14 @@
+{
+  "VicRoads": {
+    "passwordless": "allowed",
+    "documentation": "https://www.vicroads.vic.gov.au/online-services/help-centre/personal-help-centre/passkeys",
+    "notes": "Passkeys are not available on myVicRoads business accounts.",
+    "categories": [
+      "government",
+      "transport"
+    ],
+    "regions": [
+      "au"
+    ]
+  }
+}
