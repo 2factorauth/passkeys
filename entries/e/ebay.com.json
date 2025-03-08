@@ -26,6 +26,7 @@
     ],
     "img": "ebay.svg",
     "passwordless": "allowed",
+    "notes": "Cannot register multiple passkeys.",
     "documentation": "https://www.ebay.com/help/account/signing-account/signing-account?id=4189#section2",
     "categories": "retail",
     "regions": [
