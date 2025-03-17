@@ -1,0 +1,16 @@
+{
+  "Microsoft 365 Copilot": {
+    "domain": "m365.cloud.microsoft",
+    "additional-domains": [
+      "login.microsoftonline.com",
+      "office.microsoft.com",
+      "microsoft365.com",
+      "office365.com",
+      "office.com",
+      "yammer.com"
+    ],
+    "passwordless": "allowed",
+    "documentation": "https://support.microsoft.com/en-us/account-billing/how-to-use-two-step-verification-with-your-microsoft-account-c7910146-672f-01e9-50a0-93b4585e7eb4",
+    "categories": "other"
+  }
+}
