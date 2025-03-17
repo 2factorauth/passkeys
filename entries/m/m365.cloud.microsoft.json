@@ -1,6 +1,5 @@
 {
   "Microsoft 365 Copilot": {
-    "domain": "m365.cloud.microsoft",
     "additional-domains": [
       "login.microsoftonline.com",
       "office.microsoft.com",
