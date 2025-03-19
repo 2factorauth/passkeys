@@ -4,7 +4,7 @@
       "paypal-search.com"
     ],
     "passwordless": "allowed",
-    "notes": "An eligible Apple or Android device is required to create a passkey.",
+    "notes": "Cannot register multiple passkeys. An eligible Apple or Android device is required to create a passkey.",
     "documentation": "https://www.paypal.com/us/cshelp/article/help997",
     "categories": "payments"
   }
