@@ -1,0 +1,7 @@
+{
+  "Duke University": {
+    "passwordless": "allowed",
+    "documentation": "https://oit.duke.edu/service/duke-unlock/",
+    "categories": "universities"
+  }
+}
