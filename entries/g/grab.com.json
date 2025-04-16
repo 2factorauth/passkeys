@@ -1,0 +1,22 @@
+{
+  "Grab": {
+    "passwordless": "allowed",
+    "documentation": "https://engineering.grab.com/embracing-passwordless-authentication-with-passkey",
+    "regions": [
+      "sg",
+      "my",
+      "kh",
+      "id",
+      "mm",
+      "ph",
+      "vn",
+      "th"
+    ],
+    "categories": [
+      "food",
+      "payments",
+      "retail",
+      "transport"
+    ]
+  }
+}
