@@ -16,7 +16,11 @@
       "food",
       "payments",
       "retail",
-      "transport"
+      "transport",
+      "postal",
+      "insurance",
+      "travel",
+      "banking"
     ]
   }
 }
