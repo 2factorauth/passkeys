@@ -1,0 +1,11 @@
+{
+  "Bolt": {
+    "passwordless": "allowed",
+    "categories": [
+      "food",
+      "transport",
+      "travel",
+      "retail"
+    ]
+  }
+}
