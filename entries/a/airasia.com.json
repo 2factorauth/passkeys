@@ -1,0 +1,10 @@
+{
+  "AirAsia": {
+    "passwordless": "allowed",
+    "categories": [
+      "retail",
+      "transport",
+      "travel"
+    ]
+  }
+}
