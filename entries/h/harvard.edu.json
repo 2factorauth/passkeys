@@ -1,0 +1,11 @@
+{
+  "Harvard University": {
+    "mfa": "allowed",
+    "passwordless": "allowed",
+    "documentation": "https://harvard.service-now.com/ithelp?id=kb_article&sys_id=7d56d80347875650b4aa0f6c416d4309",
+    "categories": "universities",
+    "regions": [
+      "us"
+    ]
+  }
+}
