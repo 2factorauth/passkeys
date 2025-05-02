@@ -1,0 +1,10 @@
+{
+  "University of California, Los Angeles": {
+    "mfa": "allowed",
+    "documentation": "https://dts.ucla.edu/products-services/security/multi-factor-authentication/activate-ucla-logon-mfa",
+    "categories": "universities",
+    "regions": [
+      "us"
+    ]
+  }
+}
