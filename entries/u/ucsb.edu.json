@@ -1,0 +1,10 @@
+{
+  "University of California, Santa Barbara": {
+    "passwordless": "allowed",
+    "documentation": "https://it.ucsb.edu/mfa",
+    "categories": "universities",
+    "regions": [
+      "us"
+    ]
+  }
+}

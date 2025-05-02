@@ -1,0 +1,11 @@
+{
+  "University of California, Davis": {
+    "mfa": "allowed",
+    "passwordless": "allowed",
+    "documentation": "https://movetoduo.ucdavis.edu",
+    "categories": "universities",
+    "regions": [
+      "us"
+    ]
+  }
+}

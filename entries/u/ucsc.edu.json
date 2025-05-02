@@ -1,0 +1,10 @@
+{
+  "University of California, Santa Cruz": {
+    "passwordless": "allowed",
+    "documentation": "https://slughub.ucsc.edu/its?id=kb_article&sysparm_article=KB0021200",
+    "categories": "universities",
+    "regions": [
+      "us"
+    ]
+  }
+}
