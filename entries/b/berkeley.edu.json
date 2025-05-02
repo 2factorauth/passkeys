@@ -2,7 +2,6 @@
   "University of California, Berkeley": {
     "img": "berkeley.edu.png",
     "mfa": "allowed",
-    "passwordless": "allowed",
     "documentation": "https://calnetweb.berkeley.edu/calnet-2-step",
     "categories": "universities",
     "regions": [

@@ -1,6 +1,6 @@
 {
   "University of California, Irvine": {
-    "passwordless": "allowed",
+    "mfa": "allowed",
     "documentation": "https://www.oit.uci.edu/services/accounts-passwords/duo/",
     "categories": "universities",
     "regions": [

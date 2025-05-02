@@ -1,7 +1,6 @@
 {
   "University of California, Riverside": {
     "mfa": "allowed",
-    "passwordless": "allowed",
     "documentation": "https://its.ucr.edu/mfa",
     "categories": "universities",
     "regions": [
