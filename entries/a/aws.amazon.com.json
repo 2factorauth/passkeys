@@ -1,7 +1,9 @@
 {
   "Amazon Web Services": {
     "mfa": "allowed",
+    "passwordless": "allowed",
     "documentation": "https://aws.amazon.com/iam/features/mfa/",
+    "notes": "Passkeys are not supported in the China (Beijing) or China (Ningxia) regions.",
     "categories": [
       "cloud",
       "domains",
