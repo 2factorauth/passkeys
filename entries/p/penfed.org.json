@@ -1,0 +1,21 @@
+{
+  "PenFed": {
+    "domain": "penfed.org",
+    "url": "https://www.penfed.org/",
+    "contact": {
+      "facebook": "PenFed",
+      "twitter": "PenFed"
+    },
+    "tfa": [
+      "sms",
+      "u2f"
+    ],
+    "documentation": "https://www.penfed.org/website-security",
+    "regions": [
+      "us"
+    ],
+    "categories": [
+      "banking"
+    ]
+  }
+}
