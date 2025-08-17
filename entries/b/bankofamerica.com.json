@@ -4,9 +4,14 @@
       "bofa.com",
       "mbna.com"
     ],
-    "categories": "banking",
+    "contact": {
+      "twitter": "BofA_Help",
+      "facebook": "BankofAmerica",
+      "form": "https://www.bankofamerica.com/deposits/contact-bank-of-america-faqs/"
+    },
     "regions": [
       "us"
-    ]
+    ],
+    "categories": "banking"
   }
 }
