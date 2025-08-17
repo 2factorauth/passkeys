@@ -1,8 +1,9 @@
 {
   "PenFed": {
     "categories": "banking",
-    "documentation": "https://www.penfed.org/website-security",
     "passwordless": "allowed",
-    "regions": "us"
+    "regions": [
+      "us"
+    ]
   }
 }
