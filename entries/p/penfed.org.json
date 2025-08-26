@@ -1,0 +1,9 @@
+{
+  "PenFed": {
+    "categories": "banking",
+    "passwordless": "allowed",
+    "regions": [
+      "us"
+    ]
+  }
+}
