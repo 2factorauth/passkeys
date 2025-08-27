@@ -57,15 +57,8 @@ jobs:
       - name: Validate Icons
         if: ${{ steps.diff.outputs.entries || steps.diff.outputs.icons }}
         run: |
-          node tests/icons.js &
-          ICON_PID=$!
-
-          node tests/svg.js "${{ steps.diff.outputs.icons }}" &
-          SVG_PID=$!
-
-          wait "${ICON_PID}"
-
-          wait "${SVG_PID}"
+          node tests/icons.js
+          node tests/svg.js ${{ steps.diff.outputs.icons }}
 
       - name: Validate URL reachability
         if: steps.diff.outputs.entries
