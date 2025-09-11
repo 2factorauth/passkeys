@@ -1,7 +1,6 @@
 {
   "Home Depot": {
     "passwordless": "allowed",
-    "documentation": "https://www.homedepot.com/myaccount/security",
     "categories": "retail"
   }
 }
