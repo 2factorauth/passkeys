@@ -1,0 +1,10 @@
+{
+  "Wise": {
+    "additional-domains": [
+      "transferwise.com"
+    ],
+    "passwordless": "allowed",
+    "documentation": "https://wise.com/help/articles/4OTG2Z93XXyaurUviZRg5O/",
+    "categories": "finance"
+  }
+}
