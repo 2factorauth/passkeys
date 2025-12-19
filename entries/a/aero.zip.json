@@ -5,8 +5,7 @@
     "documentation": "https://aero.zip/faq/can-i-log-in-with-passkey",
     "notes": "Passwordless login only works with passkeys that support PRF.",
     "categories": [
-      "backup",
-      "creativity"
+      "backup"
     ]
   }
 }
