@@ -1,7 +1,8 @@
 {
-  "Toggl Track": {
+  "Toggl": {
     "passwordless": "allowed",
     "documentation": "https://support.toggl.com/how-to-set-up-and-log-in-with-a-passkey",
-    "categories": "productivity"
+    "categories": "productivity",
+    "categories": "task"
   }
 }
