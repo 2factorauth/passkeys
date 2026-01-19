@@ -1,0 +1,7 @@
+{
+  "Ticketmaster": {
+    "passwordless": "allowed",
+    "documentation": "https://help.ticketmaster.com/hc/articles/37580664256145",
+    "categories": "tickets"
+  }
+}
