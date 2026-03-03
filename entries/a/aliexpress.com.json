@@ -1,0 +1,12 @@
+{
+  "Aliexpress": {
+    "passwordless": "allowed",
+    "documentation": "https://aliexpress.com/",
+    "categories": [
+      "retail"
+    ],
+    "regions": [
+      "us"
+    ],
+  }
+}

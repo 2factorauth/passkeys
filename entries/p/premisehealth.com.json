@@ -1,0 +1,9 @@
+{
+  "PremiseHealth": {
+    "passwordless": "allowed",
+    "documentation": "https://www.premisehealth.com/",
+    "categories": [
+      "health"
+    ],
+  }
+}
