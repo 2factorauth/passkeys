@@ -1,7 +1,6 @@
 {
   "Aliexpress": {
-    "passwordless": "allowed",
-    "documentation": "https://aliexpress.com/",
+    "mfa": "allowed",
     "categories": [
       "retail"
     ],
