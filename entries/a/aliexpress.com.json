@@ -1,9 +1,7 @@
 {
   "AliExpress": {
     "mfa": "allowed",
-    "categories": [
-      "retail"
-    ],
+    "categories": "retail",
     "regions": [
       "us"
     ],
