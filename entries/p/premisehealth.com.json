@@ -2,9 +2,7 @@
   "Premise Health": {
     "passwordless": "allowed",
     "documentation": "https://www.mypremisehealth.com/MyChart/Authentication/Login?mode=stdfile&option=faq#Technical_2",
-    "categories": [
-      "health"
-    ],
+    "categories": "health",
     "regions": [
       "us"
     ]
