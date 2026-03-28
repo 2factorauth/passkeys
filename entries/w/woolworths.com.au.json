@@ -1,0 +1,9 @@
+{
+  "Woolworths": {
+    "passwordless": "allowed",
+    "categories": "retail",
+    "regions": [
+      "au"
+    ]
+  }
+}
