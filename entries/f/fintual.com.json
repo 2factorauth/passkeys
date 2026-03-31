@@ -1,0 +1,17 @@
+{
+  "Fintual": {
+    "passwordless": "allowed",
+    "documentation": "https://fintual.cl/seguridad-confianza/",
+    "additional-domains": [
+      "fintual.cl",
+      "fintual.mx"
+    ],
+    "categories": "investing",
+    "regions": [
+      "cl",
+      "mx"
+    ],
+    "img": "fintual.com.png",
+    "notes": "Passkeys are created in the mobile app under Security. A passkey can be required to confirm withdrawals or other sensitive actions."
+  }
+}
