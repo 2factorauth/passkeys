@@ -1,7 +1,10 @@
 {
   "Wealthsimple": {
     "passwordless": "allowed",
-    "categories": "banking",
+    "categories": [
+      "banking",
+      "investing"
+    ]
     "documentation": "https://help.wealthsimple.com/hc/en-ca/articles/45953732950939-Log-in-with-a-passkey",
     "regions": [
       "ca"
