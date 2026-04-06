@@ -1,6 +1,9 @@
 {
   "Lowe's": {
     "passwordless": "allowed",
-    "categories": "retail"
+    "categories": "retail",
+    "regions": [
+      "us"
+    ]
   }
 }
