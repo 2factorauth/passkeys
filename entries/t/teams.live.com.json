@@ -1,0 +1,10 @@
+{
+  "Microsoft Teams": {
+    "additional-domains": [
+      "skype.com"
+    ],
+    "passwordless": "allowed",
+    "documentation": "https://learn.microsoft.com/entra/identity/authentication/concept-authentication-passwordless",
+    "categories": "communication"
+  }
+}
