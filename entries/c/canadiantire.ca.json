@@ -1,0 +1,16 @@
+{
+  "Canadian Tire": {
+    "additional-domains": [
+      "triangle.com",
+      "sportchek.ca",
+      "marks.com",
+      "partycity.ca"
+    ],
+    "passwordless": "allowed",
+    "categories": "retail",
+    "documentation": "https://triangle.canadiantire.ca/en/my-account/account-settings/passkey.html",
+    "regions": [
+      "ca"
+    ]
+  }
+}
