@@ -1,0 +1,13 @@
+{
+  "Wealthsimple": {
+    "passwordless": "allowed",
+    "categories": [
+      "banking",
+      "investing"
+    ],
+    "documentation": "https://help.wealthsimple.com/hc/articles/45953732950939",
+    "regions": [
+      "ca"
+    ]
+  }
+}
