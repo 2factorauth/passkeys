@@ -1,0 +1,7 @@
+{
+  "Qantas": {
+    "passwordless": "allowed",
+    "documentation": "https://www.qantas.com/au/en/frequent-flyer/member-account-security.html#passkeys-frequently-asked-questions",
+    "categories": "travel"
+  }
+}
