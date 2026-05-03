@@ -1,8 +1,7 @@
 {
   "Shop": {
-    "img": "shopify.com.svg",
     "passwordless": "allowed",
-    "documentation": "https://help.shop.app/hc/articles/12637752526868",
+    "documentation": "https://help.shop.app/en/shop/shop-pay-settings/security/passkeys",
     "categories": "payments",
     "regions": [
       "at",
