@@ -1,0 +1,10 @@
+{
+  "Blizzard/Battle.net": {
+    "additional-domains": [
+      "battle.net"
+    ],
+    "passwordless": "allowed",
+    "documentation": "https://support.blizzard.com/help/article/380922",
+    "categories": "gaming"
+  }
+}
