@@ -1,0 +1,10 @@
+{
+  "Pixiv": {
+    "passwordless": "allowed",
+    "documentation": "https://www.pixiv.help/hc/articles/32291223415449",
+    "categories": [
+      "social",
+      "creativity"
+    ]
+  }
+}
