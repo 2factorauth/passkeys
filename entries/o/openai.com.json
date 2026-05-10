@@ -1,0 +1,11 @@
+{
+  "OpenAI (ChatGPT)": {
+    "additional-domains": [
+      "chatgpt.com"
+    ],
+    "passwordless": "allowed",
+    "mfa": "allowed",
+    "documentation": "https://help.openai.com/articles/20001039",
+    "categories": "developer"
+  }
+}
