@@ -1,0 +1,10 @@
+{
+  "Wells Fargo": {
+    "passwordless": "allowed",
+    "documentation": "https://www.wellsfargo.com/help/security-and-fraud/passkey-faqs/",
+    "regions": [
+      "us"
+    ],
+    "categories": "banking"
+  }
+}

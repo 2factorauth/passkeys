@@ -1,0 +1,13 @@
+{
+  "Capital One": {
+    "additional-domains": [
+      "capitalone.co.uk"
+    ],
+    "passwordless": "allowed",
+    "documentation": "https://www.capitalone.com/help-center/sign-in-and-identity/passkeys/",
+    "regions": [
+      "us"
+    ],
+    "categories": "banking"
+  }
+}
