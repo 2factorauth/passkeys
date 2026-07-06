@@ -1,8 +1,5 @@
 {
   "Capital One": {
-    "additional-domains": [
-      "capitalone.co.uk"
-    ],
     "passwordless": "allowed",
     "documentation": "https://www.capitalone.com/help-center/credit-cards/passkey-support/",
     "regions": [
