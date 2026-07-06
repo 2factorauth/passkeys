@@ -1,8 +1,5 @@
 {
   "Chase": {
-    "additional-domains": [
-      "chase.co.uk"
-    ],
     "passwordless": "allowed",
     "documentation": "https://www.chase.com",
     "regions": [
