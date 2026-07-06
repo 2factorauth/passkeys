@@ -1,7 +1,8 @@
 {
   "Chase": {
     "passwordless": "allowed",
-    "documentation": "https://www.chase.com",
+    "documentation": "https://www.chase.com/digital/resources/privacy-security/security/how-you-can-protect",
+    "notes": "Passkeys only work on the web.",
     "regions": [
       "us"
     ],
