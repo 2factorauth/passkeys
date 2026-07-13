@@ -1,0 +1,10 @@
+{
+  "Capital One": {
+    "passwordless": "allowed",
+    "documentation": "https://www.capitalone.com/help-center/credit-cards/passkey-support/",
+    "regions": [
+      "us"
+    ],
+    "categories": "banking"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "Walmart": {
+    "passwordless": "allowed",
+    "documentation": "https://www.walmart.com/help/article/passkeys/79bc4a57374146c497ebe3bf8d4f9b10",
+    "regions": [
+      "us"
+    ],
+    "categories": "retail"
+  }
+}
