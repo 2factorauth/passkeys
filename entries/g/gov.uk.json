@@ -3,7 +3,7 @@
     "domain": "gov.uk",
     "passwordless": "allowed",
     "documentation": "https://www.gov.uk/guidance/using-a-passkey-to-sign-in-to-govuk-one-login",
-    "categories": ["government"],
+    "categories": "government",
     "regions": ["gb"]
   }
 }
