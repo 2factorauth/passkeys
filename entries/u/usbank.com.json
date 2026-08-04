@@ -1,0 +1,10 @@
+{
+  "U.S. Bank": {
+    "passwordless": "allowed",
+    "documentation": "https://www.usbank.com/online-mobile-banking/passkey.html",
+    "regions": [
+      "us"
+    ],
+    "categories": "banking"
+  }
+}
