@@ -1,0 +1,9 @@
+{
+  "Reddit": {
+    "passwordless": "allowed",
+    "documentation": "https://support.reddithelp.com/hc/articles/49063461551252",
+    "categories": [
+      "social"
+    ]
+  }
+}
