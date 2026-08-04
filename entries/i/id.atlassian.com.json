@@ -1,0 +1,8 @@
+{
+  "Atlassian Cloud": {
+    "mfa": "allowed",
+    "passwordless": "allowed",
+    "documentation": "https://support.atlassian.com/atlassian-account/docs/access-your-atlassian-account-with-a-passkey/",
+    "categories": "developer"
+  }
+}
