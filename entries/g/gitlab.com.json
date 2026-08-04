@@ -1,7 +1,8 @@
 {
   "GitLab": {
     "mfa": "allowed",
-    "documentation": "https://docs.gitlab.com/ee/user/profile/account/two_factor_authentication.html",
+    "passwordless": "allowed",
+    "documentation": "https://docs.gitlab.com/auth/passkeys/",
     "categories": "developer"
   }
 }
