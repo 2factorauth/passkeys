@@ -1,0 +1,10 @@
+{
+  "Hytale": {
+    "additional-domains": [
+      "hytale.net"
+    ],
+    "mfa": "allowed",
+    "documentation": "https://support.hytale.com/hc/articles/44212029550491",
+    "categories": "gaming"
+  }
+}
