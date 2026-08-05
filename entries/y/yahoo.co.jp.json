@@ -1,7 +1,6 @@
 {
-  "Yahoo! [JP]": {
+  "Yahoo [JP]": {
     "passwordless": "allowed",
-    "img": "yahoo.com.svg",
     "categories": "email",
     "regions": [
       "jp"
