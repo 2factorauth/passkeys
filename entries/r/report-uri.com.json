@@ -2,6 +2,9 @@
   "Report URI": {
     "mfa": "allowed",
     "documentation": "https://docs.report-uri.com/help/passkeys/",
-    "categories": ["developer", "security"]
+    "categories": [
+      "developer",
+      "security"
+      ]
   }
 }
