@@ -1,6 +1,8 @@
 {
   "Facebook": {
-    "additional-domains": ["messenger.com"],
+    "additional-domains": [
+      "messenger.com"
+    ],
     "passwordless": "allowed",
     "mfa": "allowed",
     "documentation": "https://www.facebook.com/help/1181045243159511",
