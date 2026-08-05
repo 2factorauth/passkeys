@@ -1,0 +1,7 @@
+{
+  "SingleKey ID": {
+    "passwordless": "allowed",
+    "documentation": "https://singlekey-id.com/en-gb/frequently-asked-questions#passkeys",
+    "categories": "identity"
+  }
+}
