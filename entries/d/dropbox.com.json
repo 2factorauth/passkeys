@@ -1,6 +1,8 @@
 {
   "Dropbox": {
-    "additional-domains": ["getdropbox.com"],
+    "additional-domains": [
+      "getdropbox.com"
+    ],
     "passwordless": "allowed",
     "mfa": "allowed",
     "documentation": "https://help.dropbox.com/account-access/enable-2-factor-authentication",
