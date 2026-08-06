@@ -1,0 +1,7 @@
+{
+  "Posteo": {
+    "passwordless": "allowed",
+    "documentation": "https://posteo.de/hilfe/passkey-erstellen-und-benutzen",
+    "categories": "email"
+  }
+}
