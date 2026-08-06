@@ -1,0 +1,9 @@
+{
+  "Samsung": {
+    "passwordless": "allowed",
+    "categories": [
+      "iot",
+      "retail"
+    ]
+  }
+}
