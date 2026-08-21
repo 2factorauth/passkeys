@@ -2,7 +2,7 @@
   "GitHub": {
     "mfa": "allowed",
     "passwordless": "allowed",
-    "documentation": "https://docs.github.com/en/github/authenticating-to-github/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication",
+    "documentation": "https://docs.github.com/en/authentication/authenticating-with-a-passkey/about-passkeys",
     "recovery": "https://docs.github.com/en/github/authenticating-to-github/securing-your-account-with-two-factor-authentication-2fa/recovering-your-account-if-you-lose-your-2fa-credentials",
     "categories": "developer"
   }
