@@ -1,0 +1,7 @@
+{
+  "Telegram": {
+    "passwordless": "allowed",
+    "documentation": "https://telegram.org/faq/#q-what-is-a-passkey",
+    "categories": "communication"
+  }
+}
