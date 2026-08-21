@@ -1,0 +1,43 @@
+{
+  "Revolut": {
+    "passwordless": "allowed",
+    "documentation": "https://help.revolut.com/help/profile-and-plan/log-in-issues/what-are-passkeys/",
+    "categories": "banking",
+    "regions": [
+      "at",
+      "au",
+      "be",
+      "bg",
+      "cy",
+      "cz",
+      "de",
+      "dk",
+      "ee",
+      "es",
+      "fi",
+      "fr",
+      "gb",
+      "gr",
+      "hr",
+      "hu",
+      "ie",
+      "is",
+      "it",
+      "jp",
+      "lt",
+      "lu",
+      "lv",
+      "mt",
+      "nl",
+      "no",
+      "pl",
+      "pt",
+      "ro",
+      "se",
+      "sg",
+      "si",
+      "sk",
+      "us"
+    ]
+  }
+}
