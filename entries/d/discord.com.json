@@ -1,0 +1,10 @@
+{
+  "Discord": {
+    "additional-domains": [
+      "discordapp.com"
+    ],
+    "passwordless": "allowed",
+    "documentation": "https://support.discord.com/hc/articles/25966860846231",
+    "categories": "communication"
+  }
+}
