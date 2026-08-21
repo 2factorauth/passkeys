@@ -11,12 +11,29 @@ const PNG_RES = [[16, 16], [32, 32], [64, 64], [128, 128]];
 let seenImages = [];
 let errors = false;
 
+function parseArgs(argv) {
+  const sep = argv.indexOf('--');
+  if (sep === -1) return {touchedEntries: null, touchedIcons: null};
+  return {
+    touchedEntries: argv.slice(0, sep).filter(Boolean),
+    touchedIcons: argv.slice(sep + 1).filter(Boolean),
+  };
+}
+
+function imgPathFor(file, img) {
+  const domain = path.parse(file).name;
+  return `icons/${img ? `${img[0]}/${img}`:`${domain[0]}/${domain}.svg`}`;
+}
+
 async function main() {
-  const [entries, images] = await Promise.all([
+  const {touchedEntries, touchedIcons} = parseArgs(process.argv.slice(2));
+
+  const [allEntries, allImages] = await Promise.all([
     glob('entries/**/*.json'), glob('icons/*/*.*')]);
 
-  await parseEntries(entries);
-  await parseImages(images);
+  await buildSeenImages(allEntries);
+  await reportMissingImages(touchedEntries ?? allEntries);
+  await parseImages(touchedIcons ?? allImages);
 
   process.exit(+errors);
 }
@@ -30,26 +47,42 @@ async function alternativeSource(image) {
   return res.ok;
 }
 
-async function parseEntries(entries) {
+// Populates seenImages from every entry in the repo, without reporting errors -
+// needed so a touched icon referenced only by an untouched entry isn't flagged "unused".
+async function buildSeenImages(entries) {
   await Promise.all(entries.map(async (file) => {
-      const data = await fs.readFile(file, 'utf8');
-      const json = await JSON.parse(data);
+    try {
+      const json = JSON.parse(await fs.readFile(file, 'utf8'));
       const entry = json[Object.keys(json)[0]];
-      const {img} = entry;
-      const domain = path.parse(file).name;
-      const imgPath = `icons/${img ? `${img[0]}/${img}`:`${domain[0]}/${domain}.svg`}`;
+      const imgPath = imgPathFor(file, entry.img);
+      await fs.readFile(imgPath);
+      seenImages.push(imgPath);
+    } catch (e) {
+      // Missing image or malformed JSON: not this function's concern.
+    }
+  }));
+}
 
-      try {
-        await fs.readFile(imgPath);
-        seenImages.push(imgPath);
-      } catch (e) {
-        if (!await alternativeSource(imgPath)) {
-          core.error(`Image ${imgPath} not found.`, {file});
-          errors = true;
-        }
+async function reportMissingImages(entries) {
+  await Promise.all(entries.map(async (file) => {
+    let json;
+    try {
+      json = JSON.parse(await fs.readFile(file, 'utf8'));
+    } catch (e) {
+      return; // malformed JSON is reported by tests/json.js
+    }
+    const entry = json[Object.keys(json)[0]];
+    const imgPath = imgPathFor(file, entry.img);
+
+    try {
+      await fs.readFile(imgPath);
+    } catch (e) {
+      if (!await alternativeSource(imgPath)) {
+        core.error(`Image ${imgPath} not found.`, {file});
+        errors = true;
       }
-    }),
-  );
+    }
+  }));
 }
 
 async function parseImages(images) {
