@@ -36,14 +36,14 @@ jobs:
 
       - name: Remove label on approval or a non-"changes requested" review
         if: github.event_name == 'pull_request_review' && github.event.review.state != 'changes_requested'
-        run: gh pr edit ${{ github.event.pull_request.number }} --remove-label ${{ env.changes_requested_label }}
+        run: gh pr edit ${{ github.event.pull_request.number }} --remove-label ${{ env.changes_requested_label }} || true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
 
       - name: Remove label when author pushes new commits
         if: github.event_name == 'pull_request' && github.event.action == 'synchronize'
-        run: gh pr edit ${{ github.event.pull_request.number }} --remove-label ${{ env.changes_requested_label }}
+        run: gh pr edit ${{ github.event.pull_request.number }} --remove-label ${{ env.changes_requested_label }} || true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
@@ -88,6 +88,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Remove 'stale' label
-        run: gh pr edit ${{ github.event.issue.number }} --remove-label ${{ env.stale_label }}
+        run: gh pr edit ${{ github.event.issue.number }} --remove-label ${{ env.stale_label }} || true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
