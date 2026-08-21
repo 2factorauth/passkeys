@@ -1,0 +1,8 @@
+{
+  "E2E Trigger Test Entry": {
+    "passwordless": "allowed",
+    "documentation": "https://example.com/",
+    "categories": "communication",
+    "notes": "Temporary entry to verify the full CI-success -> dispatch -> review chain end to end; safe to close without merging."
+  }
+}
