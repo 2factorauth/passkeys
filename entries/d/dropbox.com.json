@@ -3,9 +3,10 @@
     "additional-domains": [
       "getdropbox.com"
     ],
+    "passwordless": "allowed",
     "mfa": "allowed",
-    "documentation": "https://help.dropbox.com/security/enable-two-step-verification",
-    "recovery": "https://help.dropbox.com/accounts-billing/security/issues-two-step-verification",
+    "documentation": "https://help.dropbox.com/account-access/enable-2-factor-authentication",
+    "recovery": "https://help.dropbox.com/account-access/issues-2-factor-authentication",
     "notes": "Software or SMS 2FA must be enabled for passkeys to be registered.",
     "categories": "backup"
   }
