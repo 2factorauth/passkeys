@@ -1,0 +1,8 @@
+{
+  "WebSearch Verify Test Entry": {
+    "passwordless": "allowed",
+    "documentation": "https://docs.github.com/en/authentication/authenticating-with-a-passkey/about-passkeys",
+    "categories": "communication",
+    "notes": "Temporary entry to verify the reviewer's web_search tool can actually read a real documentation page; safe to close without merging."
+  }
+}
