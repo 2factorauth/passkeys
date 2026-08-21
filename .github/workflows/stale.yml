@@ -4,13 +4,52 @@ on:
     - cron: '0 8 * * *'
   workflow_dispatch:
   issue_comment:
+  pull_request_review:
+    types: [submitted]
+  pull_request:
+    types: [synchronize]
 
 env:
   stale_label: inactive
+  changes_requested_label: changes-requested
 
 jobs:
+  label_review_state:
+    if: github.event_name == 'pull_request_review' || github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Ensure label exists
+        if: github.event_name == 'pull_request_review' && github.event.review.state == 'changes_requested'
+        run: gh label create ${{ env.changes_requested_label }} --color FBCA04 --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+
+      - name: Add label when changes are requested
+        if: github.event_name == 'pull_request_review' && github.event.review.state == 'changes_requested'
+        run: gh pr edit ${{ github.event.pull_request.number }} --add-label ${{ env.changes_requested_label }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+
+      - name: Remove label on approval or a non-"changes requested" review
+        if: github.event_name == 'pull_request_review' && github.event.review.state != 'changes_requested'
+        run: gh pr edit ${{ github.event.pull_request.number }} --remove-label ${{ env.changes_requested_label }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+
+      - name: Remove label when author pushes new commits
+        if: github.event_name == 'pull_request' && github.event.action == 'synchronize'
+        run: gh pr edit ${{ github.event.pull_request.number }} --remove-label ${{ env.changes_requested_label }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+
   stale:
-    if: github.event_name != 'issue_comment'
+    if: github.event_name != 'issue_comment' && github.event_name != 'pull_request_review' && github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
@@ -18,6 +57,7 @@ jobs:
       - uses: actions/stale@v8
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+          only-pr-labels: '${{ env.changes_requested_label }}'
           # Do not automatically mark PRs/issues as stale
           days-before-stale: -1
           # Override 'days-before-stale' for PRs only
