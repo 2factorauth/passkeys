@@ -1,0 +1,8 @@
+{
+  "PR Reviewer Test Entry": {
+    "passwordless": "allowed",
+    "documentation": "https://example.com/",
+    "categories": "communication",
+    "notes": "Temporary entry to test the automated PR reviewer pipeline; safe to close without merging."
+  }
+}
