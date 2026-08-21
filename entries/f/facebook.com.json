@@ -3,8 +3,10 @@
     "additional-domains": [
       "messenger.com"
     ],
+    "passwordless": "allowed",
     "mfa": "allowed",
-    "documentation": "https://www.facebook.com/help/148233965247823",
+    "documentation": "https://www.facebook.com/help/1181045243159511",
+    "recovery": "https://www.facebook.com/help/147926301947841",
     "categories": "social"
   }
 }
