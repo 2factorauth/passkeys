@@ -1,0 +1,47 @@
+name: AI Review Trigger
+on:
+  workflow_run:
+    workflows: ["Pull Request tests"]
+    types: [completed]
+
+jobs:
+  dispatch:
+    name: Notify PR reviewer
+    if: github.repository == '2factorauth/passkeys' && github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.event == 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: read
+    steps:
+      - name: Resolve PR number
+        id: pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          NUMBER=$(echo '${{ toJSON(github.event.workflow_run.pull_requests) }}' | jq -r '.[0].number // empty')
+          if [ -z "$NUMBER" ]; then
+            # workflow_run.pull_requests is unreliable (empty even for same-repo
+            # branches in testing, and the commits/{sha}/pulls API doesn't resolve
+            # commits that only live in a fork). Matching against the open PR list
+            # by head SHA works regardless of fork status.
+            NUMBER=$(gh api "repos/${{ github.repository }}/pulls" --paginate -X GET -f state=open \
+              --jq ".[] | select(.head.sha == \"${HEAD_SHA}\") | .number" | head -n1)
+          fi
+          if [ -z "$NUMBER" ]; then
+            echo "Could not resolve a PR number for ${HEAD_SHA}; skipping." >&2
+            exit 1
+          fi
+          echo "number=${NUMBER}" >> "$GITHUB_OUTPUT"
+
+      - name: Fire repository_dispatch to pr-reviewer
+        env:
+          DISPATCH_TOKEN: ${{ secrets.DISPATCH_TOKEN }}
+          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+          PR_NUMBER: ${{ steps.pr.outputs.number }}
+        run: |
+          curl -sS --fail-with-body -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${DISPATCH_TOKEN}" \
+            "https://api.github.com/repos/2factorauth/pr-reviewer/dispatches" \
+            -d "$(jq -n --arg pr "$PR_NUMBER" --arg sha "$HEAD_SHA" \
+              '{event_type: "review-pr", client_payload: {pr_number: ($pr | tonumber), head_sha: $sha}}')"
