@@ -1,0 +1,10 @@
+{
+  "Logitech": {
+    "additional-domains": [
+      "astrogaming.com",
+      "logi.com"
+    ],
+    "passwordless": "allowed",
+    "categories": "retail"
+  }
+}
