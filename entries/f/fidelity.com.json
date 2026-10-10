@@ -1,0 +1,11 @@
+{
+  "Fidelity Investments": {
+    "passwordless": "allowed",
+    "mfa": "allowed",
+    "documentation": "https://www.fidelity.com/security/extra-security-login",
+    "regions": [
+      "us"
+    ],
+    "categories": "investing"
+  }
+}
