@@ -1,12 +1,15 @@
 {
   "Vanguard": {
     "mfa": "allowed",
-    "documentation": "https://investor.vanguard.com/security/security-keys",
-    "notes": "Security key support requires a phone number as a backup.",
+    "passkeys-mfa": "false",
+    "passwordless": "allowed",
+    "documentation": "https://investor.vanguard.com/trust-security#modal-securitykey",
+    "notes": "Passkey key support requires a phone number as a backup. Existing security keys as mfa currently still work",
     "img": "vanguard.svg",
     "regions": [
       "-gb",
-      "-au"
+      "-au",
+      "us"
     ],
     "categories": "investing"
   }
