@@ -1,6 +1,6 @@
 {
   "Wikipedia": {
-    "mfa": "required",
+    "mfa": "allowed",
     "passwordless": "allowed",
     "documentation": "https://meta.wikimedia.org/wiki/Help:Two-factor_authentication",
     "notes": "To add a passkey you must first set up two-factor authentication.",
