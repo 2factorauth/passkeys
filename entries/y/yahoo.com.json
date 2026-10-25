@@ -1,8 +1,8 @@
 {
-  "Yahoo!": {
+  "Yahoo": {
     "mfa": "allowed",
     "passwordless": "allowed",
-    "documentation": "https://help.yahoo.com/kb/account/--sln35380.html",
+    "documentation": "https://help.yahoo.com/kb/SLN35635.html",
     "notes": "Linked phone number required for MFA.",
     "categories": "email",
     "regions": [

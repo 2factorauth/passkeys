@@ -1,0 +1,13 @@
+{
+  "Ameriprise Financial": {
+    "passwordless": "allowed",
+    "documentation": "https://www.ameriprise.com/customer-service/passkey-faq",
+    "regions": [
+      "us"
+    ],
+    "categories": [
+      "investing",
+      "banking"
+    ]
+  }
+}
