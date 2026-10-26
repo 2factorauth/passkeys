@@ -1,0 +1,16 @@
+{
+  "Everyday Rewards": {
+    "domain": "everyday.com.au",
+    "additional-domains": [
+      "woolworthsrewards.com.au",
+      "everydayrewards.com.au",
+      "everydayrewards.co.nz"
+    ],
+    "passwordless": "allowed",
+    "categories": "retail",
+    "regions": [
+      "au",
+      "nz"
+    ]
+  }
+}
