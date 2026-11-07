@@ -1,7 +1,7 @@
 {
   "Charles Schwab": {
     "passwordless": "allowed",
-    "documentation": "https://www.schwab.com/help/two-factor-authentication",
+    "documentation": "https://www.schwab.com/schwabsafe/keepingsafe",
     "regions": [
       "us"
     ],
