@@ -1,0 +1,13 @@
+{
+  "Charles Schwab": {
+    "passwordless": "allowed",
+    "documentation": "https://www.schwab.com/help/two-factor-authentication",
+    "regions": [
+      "us"
+    ],
+    "categories": [
+      "investing",
+      "banking"
+    ]
+  }
+}
