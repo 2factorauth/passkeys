@@ -1,0 +1,13 @@
+{
+  "Charles Schwab": {
+    "passwordless": "allowed",
+    "documentation": "https://www.schwab.com/schwabsafe/keepingsafe",
+    "regions": [
+      "us"
+    ],
+    "categories": [
+      "investing",
+      "banking"
+    ]
+  }
+}
